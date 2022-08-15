@@ -51,9 +51,11 @@ Ontology has a trust search engine which provides authentication and connects se
 
 ## UTU
 
-- Web: https://utu.io/
+- Web: https://utu.io
 - GitHub: https://github.com/utu-protocol
 - Stage: in development (updated whitepaper Aug 10, 2022). MVP: http://defi-portal.utu.io/
+- Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
+
 ### Description
 
 From main page:
@@ -76,5 +78,13 @@ From the protocol page:
 > - Fake and inaccurate reviews can lead to poor purchase decisions. The UTU protocol leverages blockchain to ensure that reviews can’t be manipulated.
 > - Big tech companies capture and use your data without you even knowing it. With UTU, you have full control over the data you share.
 
+### Differences
+
+- UTU focuses on providing 'trust' which is an important aspect of reputation but not enough for WorkFi
+  as it doesn't tell anything about the skills/quality of previous work
+- another UTU's focus is privacy: whitepaper says "we want users to be able to fully control
+  who gets to access their data when, for what reason, in what context etc".
+  We, on the other hand, envision reputation as something publicly available,
+  any person or service should have read access to it (and reputation flaws should not be hidden)
 
 
