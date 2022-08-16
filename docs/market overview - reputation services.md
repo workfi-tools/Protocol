@@ -48,6 +48,26 @@ Ontology has a trust search engine which provides authentication and connects se
 
 - Web: https://www.orangeprotocol.io
 - GitHub: https://github.com/orange-protocol
+- Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
+- Networks: Ethereum, Polygon, BSC
+
+### Orange protocol description
+
+From [overview](https://docs.orangeprotocol.io/overview):
+
+> On-chain data is currently scattered across a myriad of decentralized applications. Many types of actions take place in the form of transactions associated with wallet addresses.
+> 
+> However, if we were to take that transaction data, extract and consolidate useful data points together turning them into well-defined schemas, this data can prove to be very useful in assessing an entity's on-chain identity for specific contexts. Orange is to achieve just that.
+> 
+> Orange is a reputation and trust minting protocol that aggregates data and Web3 reputation models to generate comprehensive reputation proofs in the form of Verifiable Credentials and NFTs.
+
+### Our differences
+
+- Orange doesn't provide means to create reputation (via voting or other means),
+  it only helps with aggregating on-chain data to interpret facts and behavior as reputation aspects.
+  While theoretically this can be used for WorkFi, this makes each service that reads or modifies one's reputation
+  to reinvent the wheel. We believe that ready-to-use reputation aspects and procedures for their modification
+  will be much more helpful for the industry
 
 ## UTU
 
@@ -81,7 +101,7 @@ From the protocol page:
 
 UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputation count.
 
-### Differences
+### Our differences
 
 - UTU focuses on providing 'trust' which is an important aspect of reputation but not enough for WorkFi
   as it doesn't tell anything about the skills/quality of previous work;
