@@ -1,20 +1,28 @@
 # Overview of market participants
 
-## Your Justice Platform Overview
+## Your Justice
 
-- Web: https://www.yourjustice.life/, https://yj.life
+- Web: https://www.yourjustice.life, https://yj.life
 - Github: https://github.com/YourJustice-Live/
 - Stage: Alpha
 - Networks: Poligon (testnet), BSC (testnet)
+- Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 ### Description
 
 Open-source platform for reputation and near-legal relationships within communities. 
 
+## Colony
+
+- Web: https://colony.io
+- Whitepaper: https://colony.io/whitepaper.pdf (reputation: chapter 5)
+- Github: https://github.com/joincolony
+
 ## Aragon Court & Aragon Govern platform review
 
-- Web: https://court.aragon.org https://govern.aragon.org
+- Web: https://court.aragon.org, https://govern.aragon.org
 - Github: https://github.com/aragon/govern, https://github.com/aragon/aragon-court, ...
 - Networks: Eth (and Rinkeby), Polygon (and Mumbai), Harmony, BSC, Stardust
+- Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 
 ## Kleros Platform Overview
 
@@ -22,12 +30,33 @@ Open-source platform for reputation and near-legal relationships within communit
 - GitHub: https://github.com/kleros
 - Stage: Kleros 2.0
 - Network: ETH
+- Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
+
+### Our differences
+
+- Kleros' value proposition is decentralized arbitration for dispute resolving;
+  our vision is a more general as we consider dispute resolution a part of reputation system.
+  A solution like Kleros might be used as a submodule of our system.
 
 ## DREP Overview
 
 - Web: https://www.drep.org , https://medium.com/drep-family
 - Github: https://github.com/drep-project
 - Stage: is not actively maintained - last commit was in 2021
+- News: https://t.me/drep_foundation_announcements
+
+### Description
+
+From the main page:
+
+> Drep is committed to building a "connector" and "toolbox" based on blockchain technology, providing solutions with ease of use, flexibility and no impact.
+> 
+> Based on drep underlying public chain, drep decentralized ID system, drep reputation protocol layer and drep SDK, we can build an open data ecology on the chain and break the current situation of separation of public chain ecology.
+
+From [docs](https://docs.drep.org/technology-advantages/reputation/):
+
+DREP Reputation System is a comprehensive close-loop ecosystem which includes a general reputation protocol, reputation pipeline interface, reputation on-chain data storage and algorithm library, reputation reward system, reputation value account management and fake account identification mechanisms. In the ecosystem, users’ behavior is linked to their reputation which will be evaluated by multiple interacting parties. Users will also receive complete real-time updates on their reputation.
+
 ## Ontology
 
 - Web: https://ont.io/
