@@ -194,9 +194,9 @@ PredictContentments(A1, A2, Context1, Context2) ->
 
 Our mission is to deliver open-source protocols, tools, and solutions, that will:
 
-1. accelerate the development of the WorkFi industry, 
-2. be useful in community/DAO-related startups,
-3. make web3 products and services easier to implement.
+- accelerate the development of the WorkFi industry;
+- be useful in community/DAO-related startups;
+- make web3 products and services easier to implement.
 
 ## WorkFi Roadmap
 
