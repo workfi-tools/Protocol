@@ -192,9 +192,11 @@ PredictContentments(A1, A2, Context1, Context2) ->
 
 ### WorkFi vision
 
-<span style="color:red">
-	TODO a little text (we’ve got some text somewhere)
-</span>
+Our mission is to deliver open-source protocols, tools, and solutions, that will:
+
+1. accelerate the development of the WorkFi industry, 
+2. be useful in community/DAO-related startups,
+3. make web3 products and services easier to implement.
 
 ## WorkFi Roadmap
 
