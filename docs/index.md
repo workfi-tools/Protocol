@@ -123,19 +123,19 @@ RateUpdate(RateObj_M, RateMN) -> RateObj_M_updated
 
 **Why a reputation system is needed**
 
-Основная цель репутационной системы – давать наиболее точное предсказание результатов взаимодействия между агентами
+The main purpose of the reputation system is to give the most accurate prediction of the results of interactions between agents.
 
-Существует система Com взаимодействующих агентов A1, A2, ...
+There is a system of `Com` interacting agents `A1`, `A2`, ...
 
-Каждый агент имеет регулярно меняющийся показатель удовлетворенности – Contentment. В результате взаимодействия как минимум у одной из сторон этот показатель изменяется.
+Each agent has a regularly changing indicator of satisfaction - Contentment. As a result of the interaction at least one of the parties changes this indicator.
 
-Система Com тем лучше, чем выше суммарный прирост удовлетворенностей ∫ (∑(Contentment_i, i, 1..n), (t, 0, Com_lifetime), dt) за все время существования системы.
+The quality of the Com system depends on the total increase in satisfaction ∫ (∑(Contentment_i, i, 1...n), (t, 0, Com_lifetime), dt) over the lifetime of the system.
 
-Чем больше агентов, тем лучше
+The more agents the better.
 
-Чем больше взаимодействий между ними, тем лучше
+The more interactions between them, the better.
 
-Чем дольше живет система, тем лучше
+The longer the system lives, the better.
 
 **The higher the increase in satisfaction with the results of each of the interactions, the better**
 
