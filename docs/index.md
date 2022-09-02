@@ -186,7 +186,7 @@ In order to choose the interactions for which the increase in satisfaction will 
 
 `PredictContentments(A1, A2, Context1, Context2) ->`
 
-`-`> (∂Contentment1, ∂Contentment2)`
+`-> (∂Contentment1, ∂Contentment2)`
 
 ## WorkFi industry
 
