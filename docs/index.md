@@ -38,9 +38,27 @@ Here are some of core principles:
 
 ##### Usecases
 
-<span style="color:red">
-	TODO🔥
-</span>
+**P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
+
+Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
+
+**Main scenario –** solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
+
+**Side Scenarios**
+
+1. The outstaff team manager vouches for the quality of all team members
+2. A top-notch renowned expert audits the performer's competencies and vouches for him in the event of a successful test
+3. Course instructor vouches for his students - performers on the platform, and helps them in case of problems to successfully perform tasks
+4. Professional guarantors are community members who are good at identifying qualifications and predicting the quality of services provided by the performer. Possibly help with the most difficult cases to avoid negative evaluations.
+
+**How it works**
+
+Let's take the basic scenario as an example.
+
+**Background**. There is some community S with a reputation system R, in which scientific experts advise each other for a fee. There is a respected member of the community with a high reputation (20K) named A. There is a new member of the community, B, who is also a high-level expert, but has just registered on the platform and his reputation is 0. A and B know each other well.
+
+1. B asks A to act as his guarantor, and A agrees.
+2. A with the UI calls the method in R: R.guarantee()
 
 ##### Features
 
@@ -454,15 +472,81 @@ UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputatio
 
 # Responsibility
 
-<span style="color:red">
-	🔥 (bits in overview)
-</span>
-
 ## Responsible rates
 
-<span style="color:red">
-	(оценки, идущие вразрез с сообществом, приводят к rep.loss; cases for review-audits like in SO?): TODO: text
-</span>
+Scores that go against the community result in a loss.
+
+### Handling abnormal scores
+
+#### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
+
+If the worker receives a low score, it is quarantined. This is a mode of the score in which it is not displayed and is not accounted in the worker's overall rating (displayed by UI).
+
+If the next 5 scores are higher than the average reputation of the user, the “bad” score is discarded – implying that participants "did not match".
+
+If a score *lower than the average* (?) comes among the next 5 scores, the low score gets accounted. In this case (*in both cases?*), the abnormal score can be disputed.
+
+**The problem being solved** is “spoiling” one’s rating due to miscommunication.
+
+**An adjacent case**: a user with low rating (a not-so-decent community member) gets an abnormally high score (is that a favor or a real improvement?). It also gets quarantined and is applied if the next scores “confirm” it. Note: a dispute is unlikely in this case as both sides are not interested in it.
+
+**Procedure details**
+
+User A has a high rating: their scores are usually in the range 90-100 (with 100 being maximum).
+
+UserB, based on his work/political/religious/personal considerations, gives UserA a score of 10%.
+
+Since the average grade for A = 100+90 / 2 = 95%, the threshold for an acceptable grade would be 42%.
+
+Since 10<42, we believe that the estimate is abnormal. We mark it as suspicious .
+
+Start observing the 5 subsequent evaluations. If the subsequent scores are higher than (100+90-10) / 3 = 60%, consider that the low score was abnormal - discard it from the history and remove the user from quarantine.
+
+In this case, the threshold of the acceptable score has increased - an additional incentive for UserA.
+
+If UserA, in observation mode, gets a score lower than (100+90-10) / 3 = 60%, consider that the score from UserB may have been deserved - include it in the overall statistics.
+
+**Early withdrawal from observation**
+
+UserA can open DisputeResolution.
+
+If the dispute is resolved in favor of A, the score is discarded.
+
+If the argument is in favor of B, A's low grade is counted instantly. Observation mode is terminated.
+
+#### The user gives the performer a 1 for non-good reason. Dispute is open
+
+The user gives the performer a low score and opens a dispute.
+
+Then there are three options for the development of events:
+
+- the performer is found to be at fault. The evaluation goes into the performer's reputation.
+- the dispute is resolved in the side of the performer. The score is not counted in the reputation, or a high score is given (by the arbitrator's decision)
+- the parties go to a settlement - we believe that the reputation of the performer and the customer does not suffer - both get A's (it is advantageous to go to a settlement)
+
+#### The contractor deliberately fails to complete the order. Dispute Resolution.
+
+If the contractor openly walks away from the order, the arbitrator recognizes the dispute in favor of the customer. The contractor is given a low reputation score.
+
+The contractor cannot take orders during the week.
+
+#### The performer has gone bad in life. Started to forget about everything. Depression.
+
+In such a scenario, the reputation of the user tends to 0. Other users see the low reputation and do not accept the risk. The only way to fix reputation is to take on "cheap" orders, where customers are willing to take a risk and work with an unreliable performer.
+
+####  The ratio of the value of the order to the reputation received.
+
+Very important is the ratio of the cost of the order to the reputation that the contractor gets. The idea is that the higher the cost of the order, the higher the risk for non-performance. A high risk should lead to a high reward.
+
+At the same time, it is clear that a client with an "expensive" order will not go to a person with a low reputation for help.
+
+That's how we get two leagues: the "higher" and the "premier".
+
+The highest league, where the user is offered expensive orders. For the execution of orders, the user receives a high reputation and, at the same time, for a failed order the user will be severely punished.
+
+"Premier" league is the lower segment - users with a low reputation get offers at a low cost. It turns out that it takes time and effort to get to the top league.
+
+The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
 
 ## Responsible invites (vouching)
 
@@ -931,31 +1015,6 @@ This principle is necessary to avoid reputation bumping (cheating).
 </span>
 
 # Some content
-
-## P2P Guarantors
-
-**P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
-
-Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
-
-**Main scenario –** solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
-
-**Side Scenarios**
-
-1. The outstaff team manager vouches for the quality of all team members
-2. A top-notch renowned expert audits the performer's competencies and vouches for him in the event of a successful test
-3. Course instructor vouches for his students - performers on the platform, and helps them in case of problems to successfully perform tasks
-4. Professional guarantors are community members who are good at identifying qualifications and predicting the quality of services provided by the performer. Possibly help with the most difficult cases to avoid negative evaluations.
-
-**How it works**
-
-Let's take the basic scenario as an example.
-
-**Background**. There is some community S with a reputation system R, in which scientific experts advise each other for a fee. There is a respected member of the community with a high reputation (20K) named A. There is a new member of the community, B, who is also a high-level expert, but has just registered on the platform and his reputation is 0. A and B know each other well.
-
-1. B asks A to act as his guarantor, and A agrees.
-2. A with the UI calls the method in R: R.guarantee()
-
 ## Protection against artificial sway/attack of lowering the profile?
 
 **Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
@@ -965,76 +1024,4 @@ Let's take the basic scenario as an example.
 If the user receives an abnormal score (below half of the current average reputation), the score is frozen and the user is quarantined.
 
 If the dispute has not been opened by either party, the score is discarded.
-
-## Handling abnormal scores
-
-### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
-
-If the worker receives a low score, it is quarantined. This is a mode of the score in which it is not displayed and is not accounted in the worker's overall rating (displayed by UI).
-
-If the next 5 scores are higher than the average reputation of the user, the “bad” score is discarded – implying that participants "did not match".
-
-If a score *lower than the average* (?) comes among the next 5 scores, the low score gets accounted. In this case (*in both cases?*), the abnormal score can be disputed.
-
-**The problem being solved** is “spoiling” one’s rating due to miscommunication.
-
-**An adjacent case**: a user with low rating (a not-so-decent community member) gets an abnormally high score (is that a favor or a real improvement?). It also gets quarantined and is applied if the next scores “confirm” it. Note: a dispute is unlikely in this case as both sides are not interested in it.
-
-**Procedure details**
-
-User A has a high rating: their scores are usually in the range 90-100 (with 100 being maximum).
-
-UserB, based on his work/political/religious/personal considerations, gives UserA a score of 10%.
-
-Since the average grade for A = 100+90 / 2 = 95%, the threshold for an acceptable grade would be 42%.
-
-Since 10<42, we believe that the estimate is abnormal. We mark it as suspicious .
-
-Start observing the 5 subsequent evaluations. If the subsequent scores are higher than (100+90-10) / 3 = 60%, consider that the low score was abnormal - discard it from the history and remove the user from quarantine.
-
-In this case, the threshold of the acceptable score has increased - an additional incentive for UserA.
-
-If UserA, in observation mode, gets a score lower than (100+90-10) / 3 = 60%, consider that the score from UserB may have been deserved - include it in the overall statistics.
-
-**Early withdrawal from observation**
-
-UserA can open DisputeResolution.
-
-If the dispute is resolved in favor of A, the score is discarded.
-
-If the argument is in favor of B, A's low grade is counted instantly. Observation mode is terminated.
-
-### The user gives the performer a 1 for non-good reason. Dispute is open
-
-The user gives the performer a low score and opens a dispute.
-
-Then there are three options for the development of events:
-
-- the performer is found to be at fault. The evaluation goes into the performer's reputation.
-- the dispute is resolved in the side of the performer. The score is not counted in the reputation, or a high score is given (by the arbitrator's decision)
-- the parties go to a settlement - we believe that the reputation of the performer and the customer does not suffer - both get A's (it is advantageous to go to a settlement)
-
-### The contractor deliberately fails to complete the order. Dispute Resolution.
-
-If the contractor openly walks away from the order, the arbitrator recognizes the dispute in favor of the customer. The contractor is given a low reputation score.
-
-The contractor cannot take orders during the week.
-
-### The performer has gone bad in life. Started to forget about everything. Depression.
-
-In such a scenario, the reputation of the user tends to 0. Other users see the low reputation and do not accept the risk. The only way to fix reputation is to take on "cheap" orders, where customers are willing to take a risk and work with an unreliable performer.
-
-### 5.  The ratio of the value of the order to the reputation received.
-
-Very important is the ratio of the cost of the order to the reputation that the contractor gets. The idea is that the higher the cost of the order, the higher the risk for non-performance. A high risk should lead to a high reward.
-
-At the same time, it is clear that a client with an "expensive" order will not go to a person with a low reputation for help.
-
-That's how we get two leagues: the "higher" and the "premier".
-
-The highest league, where the user is offered expensive orders. For the execution of orders, the user receives a high reputation and, at the same time, for a failed order the user will be severely punished.
-
-"Premier" league is the lower segment - users with a low reputation get offers at a low cost. It turns out that it takes time and effort to get to the top league.
-
-The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
 
