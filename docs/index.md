@@ -876,44 +876,42 @@ Final decision to confirm or not to confirm EN writing skills.
 
 ## Court system
 
-### Обзор судебной системы 
+### Overview of the court system (judiciary) 
 
-В настоящее время все больше традиционных процессов уходит в онлайн. Наверное осталось небольшое количество не оцифрованных процессов. 
-С появлением технологии блокчейн мы можем быть на 100% уверенными в существовании определённых событий во времени, что подкрепляется неопровержимыми доказательствами, хранящимися в распределённой реестре. 
-Набравшие популярность технологии proof-of-stake позволяют значительно сократить стоимость записи и хранения блоков в цепочке, делая доступным технологию для массового внедрения в широкие области жизнедеятельности. 
-Одной из областей, к которой мы хотим обратиться - это решение споров. 
-Почему люди не перестанут спорить? Если мы рассмотрим человека как класс, то увидим, что у класса есть определённый набор биологических, социальных, психологических и множества других свойств. Каждый экземпляр класса, то есть каждый человек, обладает индивидуальными значениями этих свойств, и эти значения постоянно мутируют во времени, во взаимодействии с другими людьми, средствами получения информации и еще множество условий. 
-Поэтому взгляды людей на одни и те же вещи, события или процессы могут обьективно координально отличаться. 
-Есть ещё один важный для нас аспект человеческой природы - это человеческое Эго и одно из главных его проявлений - Эгу крайне необходимо быть правым и доказывать свою правоту любыми доступными способами и любой ценой, даже самой высшей ценой -  своей жизнью. 
+Nowadays, more and more traditional processes are moving online. 
+Probably a small number of non-digitized processes remain. With the advent of blockchain technology, we can be 100% sure of the existence of certain events in time, which is supported by irrefutable evidence stored in a distributed ledger. 
 
-### Что с этим делать?
+Proof-of-stake technologies, which have gained popularity, can significantly reduce the cost of recording and storing blocks in the chain, making the technology available for mass implementation in wide areas of life. One area we want to address is dispute resolution. Why don't people stop arguing? If we consider a person as a class, we will see that a class has a certain set of biological, social, psychological and many other properties. Each instance of the class, that is, each person, has individual values for these properties, and these values are constantly mutating in time, in interaction with other people, means of obtaining information, and many more conditions. Therefore, people's views on the same things, events or processes can be objectively radically different. There is another aspect of human nature that is important for us - this is the human Ego and one of its main manifestations - the Ego absolutely needs to be right and prove his case by any available means and at any cost, even at the highest cost - with his life.
 
-При невозможности договориться стороны могут выбрать систему разрешения их спора, которой будут доверять.
-В этом случае вердикт, вынесенный судебной системой будет принят Эго с минимальной критикой.
-Важные триггеры доверия к системе:
--	Невозможность одной из сторон прямо или косвенно влиять на процесс принятия решения.
--	 Соответствие решения с действующими законами,  соглашениями и принципами, принятыми обеими сторонами. 
--	Отсутствие заинтересованности. 
--	Прозрачность всех процессов.
--	Минимизация человеческих ошибок при принятии решения.
+### What we have to do?
 
-### Роль судьи
+If it is impossible to agree, the parties can choose a system for resolving their dispute, which they will trust. In this case, the verdict issued by the judicial system will be accepted by the Ego with minimal criticism. 
 
-На роль судьи будут приниматься участники сообщества, отвечающие следующим критериям:
--	положительный рейтинг;
--	застейканные активы;
--	прошедшие тесты на знание законов и принципов сообщества и ставшие экзаменационные тестовые судебные задания.
+Important triggers of system trust:
 
-В дальнейшем можно внедрить институт судейства, в котором сначала участник становится претендентом, решает параллельно судебные кейсы и набирает баллы для того чтобы стать судьёй.
+- The inability of one of the parties to directly or indirectly influence the decision-making process.
+- Compliance of the decision with applicable laws, agreements and principles accepted by both parties.
+- Lack of interest.
+- Transparency of all processes.
+- Minimizing human error in decision making.
 
-### Механизм принятия решений.
+### The Role of the Judge
 
-Судье приходит запрос, что система рандомным образом выбрала его в роли судьи. Судья принимает запрос и ему становятся доступны материалы дела. Иск одной из сторон и доводы другой стороны, также доступны доказательства каждой из сторон, в том числе показания свидетелей, зарегистрированных в системе.
+Members of the community who meet the following criteria will be accepted as judges:
 
-Судья, руководствуясь действующими в сообществе нормами и законами принимает решение акцептуя один из доступных вариантов: удовлетворить иск, удовлетворить частично, отказать.
+- positive rating;
+- staked assets;
+- passed tests on knowledge of the laws and principles of the community and became examination test court tasks.
 
-Для минимизации вероятности человеческой ошибки решение принимается параллельно несколькими судьями, нечетным числом.
-Судьям не видны решения, других судей по этому кейсу.
+In the future, it is possible to introduce the institution of judging, in which at first the participant becomes an applicant, solves legal cases in parallel and gains points in order to become a judge.
+
+### Decision-making mechanism
+
+The judge receives a request that the system has randomly selected him as a judge. The judge accepts the request and the case materials become available to him. The claim of one of the parties and the arguments of the other party, the evidence of each of the parties is also available, including the testimony of witnesses registered in the system.
+
+The judge, guided by the norms and laws in force in the community, makes a decision by accepting one of the available options: satisfy the claim, partially satisfy, refuse.
+
+To minimize the likelihood of human error, the decision is made in parallel by several judges, an odd number. The judges do not see the decisions of other judges on this case.
 
 ### Флоу судебного дела
 
@@ -931,12 +929,13 @@ Final decision to confirm or not to confirm EN writing skills.
 12.	В таком случае процесс повторяется в п.8-10.
 13.	В случае идентичного решения апелляции решение автоматически утверждается.
 14.	При противоположном решении апелляции процесс повторяется в третьем составе судей. Решение третьего состава считается окончательным.
-15. Иерархия законов  
-Решения судей не должны противоречить законам сообщества, а только расширять его свойства, не переопределяя его суть.
-Сообщество формирует законы самостоятельно как пенсорс систему.
-Голосует за принятие тех или иных поправок и новых законов.
-Судебные решения, при изменении законов не изменяются.
 
+### Иерархия законов  
+ 
+- Решения судей не должны противоречить законам сообщества, а только расширять его свойства, не переопределяя его суть.
+- Сообщество формирует законы самостоятельно как пенсорс систему.
+- Голосует за принятие тех или иных поправок и новых законов.
+- Судебные решения, при изменении законов не изменяются.
 
 # Safety, anti-fraud
 
