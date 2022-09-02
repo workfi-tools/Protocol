@@ -510,75 +510,75 @@ Referrals can both help or hurt the inviting user: if the invitee recommends the
 
 **Grading system**
 
-ШКАЛА ОЦЕНОК — методический прием, позволяющий распределить совокупность изучаемых объектов по степени выраженности общего для них свойства. Такое распределение основывается на оценках субъективных данного свойства, усредненных по группе экспертов. В психологии и социологии шкалы оценок стали применяться одними из первых. Простейший пример такой шкалы — обычная школьная система баллов. Шкала оценок имеет от пяти до одиннадцати интервалов, кои можно обозначить числами или же вербально. **Считается, что психологические возможности человека не позволяют ему классифицировать объекты более чем по 11 — 13 позициям**. Возможность построения шкалы оценок базируется на предположении, что каждый эксперт способен непосредственно давать количественные оценки изучаемым объектам. К основным процедурам шкалирования относятся:
+Grading system is a methodological technique that allows you to distribute the set of objects under study according to the degree of expression of a common property for them. Such distribution is based on subjective estimates of a given property averaged over a group of experts. In psychology and sociology, rating scales were one of the first to be used. The simplest example of such a scale is the common school grading system. The grading scale has from five to eleven intervals, which can be designated by numbers or verbally. **It is considered that a person's psychological abilities don't allow him to classify objects on more than 11 to 13 items**. The possibility of constructing a rating scale is based on the assumption that each expert is able to directly quantify the objects under study. The basic scaling procedures include:
 
-1. Англия - A\*, A, B, C, D, E, F, G
-2. Америка -  A, B, C, D, F
-3. Япония - * yuu(優): A (90-100%)
+1. England - A\*, A, B, C, D, E, F, G
+2. USA -  A, B, C, D, F
+3. Japan - * yuu(優): A (90-100%)
 * ryou(良): B (70-<90%)
 * ka(可): C (60-<70%)
 * fuka(不可): F (0-<60%)
-4. Европа - 10 бальные и 5 бальные системы
-5. Apple Store, Google play, Yandex, UBER, BOLT, Glovo, Aliexpress, Wechat, Facebook Marketplace, Amazon - 5 бальная система. Можно сделать вывод, что большей части человечества понятна 5 бальная система.
-6. Шкала оценки боли - 10 бальная с эмодзи.
-7. С точки зрения юзабилити самый лучшая система у Amazon.
-8. Предустановленные оценки
+1. Europe - 10 and 5 point systems.
+2. Apple Store, Google play, Yandex, UBER, BOLT, Glovo, Aliexpress, Wechat, Facebook Marketplace, Amazon - 5 point system. We can conclude that most of humanity understands the 5 point system.
+3. Pain Rating Scale - 10 point with emoji.
+4. In terms of usability, Amazon has the best system.
+5.  Preset grades
 
 **Scale 1-5**
 
-**Pros:** Это очень распространенная шкала, с которой все уже знакомы.
+**Pros:** This is a very common scale that everyone is already familiar with.
 
-Она предоставляет более нейтральную позицию
+It provides a more neutral position.
 
-**Cons:** Нейтральная позиция не всегда информативна.
+**Cons:** A neutral position is not always informative.
 
 **Scale 1-6**
 
-**Pros:** Гость не может выбрать нейтральную позицию и должен выбрать положительную или отрицательную оценку
+**Pros:** The guest cannot choose a neutral position and must choose a positive or negative evaluation.
 
-**Cons:** Это не очень распространенная шкала
+**Cons:** This is not a very common scale
 
-Не все гости считают 3/6 плохим отзывом или 4/6 - хорошим.
+Not all guests consider 3/6 a bad review or 4/6 a good review.
 
 **Scale 1-10**
 
-Эта шкала используется Booking.com.
+This scale is used by Booking.com.
 
-**Pros:** Она позволяет оценить Ваш персонал и контролировать Ваши услуги
+**Pros:** It allows you to evaluate your staff and monitor your services
 
-Ваш клиент может сделать более подробный выбор
+Your customer can make more detailed choices.
 
-**Cons:** Вы получаете больше результатов опросов, которые будут иметь средний рейтинг, из-за большого масштабирования
+**Cons:** You get more survey results, which will have an average rating, because of the large scaling
 
-Получить 10 непросто, так как масштабирование очень велико. 10 будет означать, что для гостей все их пребывание было восхитительным
+Getting a 10 is not easy because the scale is very large. A 10 will mean that for guests their entire stay was delightful
 
-У числовых шкал есть серьезный недостаток. Восприятие такой шкалы сильно зависит от респондента. Оценка 5 по шкале от 1 до 10 для разных людей может означать что угодно —от хорошего до едва допустимого. Кроме того, некоторым людям гораздо сложнее обосновать выбор категории на дальнем конце шкалы, чем другим. Все это приводит к тому, что респонденты с одним и тем же мнением могут выбирать разные категории, создавая в опросе источник ошибок. Эти ошибки, в свою очередь, затрудняют выяснение действительного мнения, которое представляют полученные данные.
+Numerical scales have a serious disadvantage. The perception of such a scale is highly dependent on the respondent. A score of 5 on a scale of 1 to 10 can mean anything from good to barely acceptable to different people. Also, some people have a much harder time justifying a category choice at the far end of the scale than others. All of this leads respondents with the same opinion to choose different categories, creating a source of error in the survey. These errors, in turn, make it difficult to figure out the actual opinion that the data represent.
 
-Очень довольны = 5
+Very satisfied = 5
 
-Довольны = 4
+Satisfied = 4
 
-Нейтральное отношение = 3
+Neutral = 3
 
-Недовольны = 2
+Dissatisfied = 2
 
-Очень недовольны = 1
+Very dissatisfied = 1
 
-Не указано = ответ отсутствует
+Not specified = ответ отсутствует
 
-Прекрасно = 10
+Beautiful = 10
 
-Очень хорошо = 8
+Very good = 8
 
-Хорошо = 6
+Good = 6
 
-Неплохо = 5
+Not bad = 5
 
-Плохо = 3
+Bad = 3
 
-Хуже всего = 0
+The worst = 0
 
-**Функция изменить оценку. Исполнитель недоволен оценкой и чтобы повысить ее может в начале договориться с заказчиком напрямую, чтобы ее исправить. Если не получается договориться, то уже привлекаются 3-е лица.**
+**Function to change the grade. The contractor is unhappy with the grade and can first negotiate directly with the customer to correct it. If this does not work, a third party is involved.**
 
 # P2P crowdsourcing
 
