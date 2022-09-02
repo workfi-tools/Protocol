@@ -934,37 +934,37 @@ This principle is necessary to avoid reputation bumping (cheating).
 
 ## P2P Guarantors
 
-**P2P Guarantor** – член сообщества с достаточно высокой репутацией, который может гарантировать качество  взаимодействий с другим членом сообщества – новым или с малым количеством репутации – в обмен на часть прибыли.
+**P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
 
-Guarantor отвечает своей репутацией за поручаемого на весь срок предоставляемой гарантии. В случае, если получивший гарантию получает низкие оценки, это уменьшает репутацию гарантора. В случае положительных оценок – повышает. Скорость повышения и понижения репутации давшего гарантию регулируется устанавливаемыми коэффициентами и является одним из инструмента тюнинга макроэкономики репутации.
+Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
 
-**Main scenario –** решить проблему, когда новый участник сообщества совсем не имеет репутации и из-за этого ему может быть очень сложно получить первые заказы и проявить себя
+**Main scenario –** solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
 
 **Side Scenarios**
 
-1. Менеджер аутстафф команды ручается за качество всех членов команды
-2. Высококлассный известный эксперт проводит аудит компетенций исполнителя и ручается за него в случае успешного тестирования
-3. Преподаватель курсов ручается за своих учеников – исполнителей на платформе, и помогает им в случае проблем успешно выполнять задания
-4. Профессиональные гаранторы – члены сообщества, которые умеют хорошо определять квалификации и прогнозировать качество предоставляемых услуг исполнителем. Возможно, помогают с самыми сложными случаями для избежания отрицательных оценок.
+1. The outstaff team manager vouches for the quality of all team members
+2. A top-notch renowned expert audits the performer's competencies and vouches for him in the event of a successful test
+3. Course instructor vouches for his students - performers on the platform, and helps them in case of problems to successfully perform tasks
+4. Professional guarantors are community members who are good at identifying qualifications and predicting the quality of services provided by the performer. Possibly help with the most difficult cases to avoid negative evaluations.
 
 **How it works**
 
-Рассмотрим на примере основного сценария.
+Let's take the basic scenario as an example.
 
-**Background**. Существует некоторое сообщество S с репутационной системой R, в котором научные эксперты оказывают друг другу консультации на платной основе. Есть уважаемый член сообщества с высокой репутацией (20K) по имени A. Есть новый член сообщества – B, который тоже является высококлассным специалистом, однако на платформе только зарегистрировался и его репутация – 0. A и B хорошо знакомы.
+**Background**. There is some community S with a reputation system R, in which scientific experts advise each other for a fee. There is a respected member of the community with a high reputation (20K) named A. There is a new member of the community, B, who is also a high-level expert, but has just registered on the platform and his reputation is 0. A and B know each other well.
 
-1. B просит A выступить его гарантором, и A соглашается.
-2. A с помощью UI вызывает метод в R: R.guarantee(
+1. B asks A to act as his guarantor, and A agrees.
+2. A with the UI calls the method in R: R.guarantee()
 
 ## Protection against artificial sway/attack of lowering the profile?
 
-**Case:** в сети регистрируется 10 пользователей, создают заказы на $1 и их все выполняет пользователь Х. За это он получает от всех высокую оценку.
+**Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
 
-**Case:** пользователь получает порцию единичек подряд – организованная атака на профиль.
+**Case:** the user gets a batch of ones in a row - an organized attack on the profile.
 
-Если пользователь получает аномальную оценку (ниже половины текущей усредненной репутации), оценка замораживается, пользователь ставится на карантин.
+If the user receives an abnormal score (below half of the current average reputation), the score is frozen and the user is quarantined.
 
-Если диспут не был открыт ни одной из сторон, оценка отбрасывается.
+If the dispute has not been opened by either party, the score is discarded.
 
 ## Handling abnormal scores
 
