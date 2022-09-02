@@ -984,59 +984,57 @@ If a score *lower than the average* (?) comes among the next 5 scores, the low s
 
 User A has a high rating: their scores are usually in the range 90-100 (with 100 being maximum).
 
-ПользовательВ, исходя из своих рабочих/политических/религиозных/личных соображений, ставит ПользА оценку в 10%.
+UserB, based on his work/political/religious/personal considerations, gives UserA a score of 10%.
 
-Поскольку, усредненная оценка для А = 100+90 / 2 = 95%, пороговым значением допустимой оценки будет 42%.
+Since the average grade for A = 100+90 / 2 = 95%, the threshold for an acceptable grade would be 42%.
 
-Т.к. 10<42, считаем, что оценка аномальная. Ставим ее "на карандаш".
+Since 10<42, we believe that the estimate is abnormal. We mark it as suspicious .
 
-Начинаем наблюдать 5 последующих оценок. В случае, если последующие оценки выше (100+90-10) / 3 = 60%, считаем, что низкая оценка была аномальной – отбрасываем ее из истории и снимаем пользователя с карантина.
+Start observing the 5 subsequent evaluations. If the subsequent scores are higher than (100+90-10) / 3 = 60%, consider that the low score was abnormal - discard it from the history and remove the user from quarantine.
 
-В данном случае, пороговое значение допустимой оценки увеличилось – дополнительный стимул ПользователюА.
+In this case, the threshold of the acceptable score has increased - an additional incentive for UserA.
 
-Если пользовательА, в режиме наблюдения, получает оценку ниже (100+90-10) / 3 = 60%, считаем, что оценка от ПользователяВ могла быть заслуженной - включаем в общую статистику.
+If UserA, in observation mode, gets a score lower than (100+90-10) / 3 = 60%, consider that the score from UserB may have been deserved - include it in the overall statistics.
 
 **Early withdrawal from observation**
 
-ПользовательА может открыть DisputeResolution.
+UserA can open DisputeResolution.
 
-Если спор решается в сторону А, оценка отбрасывается.
+If the dispute is resolved in favor of A, the score is discarded.
 
-Если спор в пользу В, низкая оценка А засчитывается моментально. Режим наблюдения прекращается.
+If the argument is in favor of B, A's low grade is counted instantly. Observation mode is terminated.
 
-### Пользователь обижен на жизнь и ставит исполнителю 1. Открыт диспут
+### The user gives the performer a 1 for non-good reason. Dispute is open
 
-Пользователь ставит исполнителю низкий балл и открывает диспут.
+The user gives the performer a low score and opens a dispute.
 
-Далее есть 3 варианта развития событий:
+Then there are three options for the development of events:
 
-- исполнитель признается виноватым. Оценка попадает в репутацию исполнителя.
+- the performer is found to be at fault. The evaluation goes into the performer's reputation.
+- the dispute is resolved in the side of the performer. The score is not counted in the reputation, or a high score is given (by the arbitrator's decision)
+- the parties go to a settlement - we believe that the reputation of the performer and the customer does not suffer - both get A's (it is advantageous to go to a settlement)
 
-- диспут решается в сторону исполнителя. Оценка не учитывается в репутации, либо ставится высокая оценка (по решению арбитра)
+### The contractor deliberately fails to complete the order. Dispute Resolution.
 
-- стороны идет на мировую - считаем, что репутация исполнителя и заказчика не страдает - оба получают пятерки (выгодно идти на мировую)
+If the contractor openly walks away from the order, the arbitrator recognizes the dispute in favor of the customer. The contractor is given a low reputation score.
 
-### Исполнитель сознательно факапит заказ. Диспут резолюшн.
+The contractor cannot take orders during the week.
 
-Если исполнитель открыто уходит от выполнения заказа, арбитр признает диспут в пользу заказчика. Исполнителю ставится низкая оценка в репутацию.
+### The performer has gone bad in life. Started to forget about everything. Depression.
 
-Исполнитель не может брать заказы в течение недели.
+In such a scenario, the reputation of the user tends to 0. Other users see the low reputation and do not accept the risk. The only way to fix reputation is to take on "cheap" orders, where customers are willing to take a risk and work with an unreliable performer.
 
-### Исполнитель испортился по жизни. Стал забивать на все. Депрессия.
+### 5.  The ratio of the value of the order to the reputation received.
 
-В таком сценарии, репутация пользователя стремится к 0. Другие пользователи видят низкую репутацию и не соглашаются рисковать. Единственный способ исправить репутацию - браться за "дешевые" заказы, где заказчики готовы рискнуть и поработать с ненадежным исполнителем.
+Very important is the ratio of the cost of the order to the reputation that the contractor gets. The idea is that the higher the cost of the order, the higher the risk for non-performance. A high risk should lead to a high reward.
 
-### 5. Соотношение стоимости заказа и полученной репутации.
+At the same time, it is clear that a client with an "expensive" order will not go to a person with a low reputation for help.
 
-Очень важное – соотношение стоимости заказа и репутации, которую получает исполнитель. Идея в том, что чем выше стоимость заказа, тем выше риск за неисполнение обязательств. Высокий риск должен вести к высокому вознаграждению.
+That's how we get two leagues: the "higher" and the "premier".
 
-Вместе с тем, понятно, что клиент с "дорогим" заказом не пойдет ха помощью к человеку с низкой репутацией.
+The highest league, where the user is offered expensive orders. For the execution of orders, the user receives a high reputation and, at the same time, for a failed order the user will be severely punished.
 
-Так мы получаем две лиги: "высшую" и "премьер".
+"Premier" league is the lower segment - users with a low reputation get offers at a low cost. It turns out that it takes time and effort to get to the top league.
 
-Высшая лига, где пользователю предлагаются дорогие заказы. За исполнение заказов, пользователь получает высокую репутацию и, вместе с тем, за проваленный заказ пользователь будет жестко наказан.
-
-"Премьер" лига – нижний сегмент – пользователи с невысокой репутации получают предложения на невысокую стоимость. Получается, что требуется время и усилие, чтобы добраться до высшей лиги.
-
-Профит в том, что, при таком подходе, репутация складывается не из одного дорого проекта, а из множества выполненных проектов поменьше
+The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
 
