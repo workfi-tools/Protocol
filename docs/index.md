@@ -95,31 +95,21 @@ Agent An can initiate an interaction with agent Am.
 
 The interaction can be unidirectional (asymmetric) or bidirectional (symmetric). *todo: what’s the difference?*
 
-*В некоторых системах (посмотреть видос и оценить лайком – не требуется согласия обеих сторон на взаимодействие, в других типа Upwork – требуется). Рассмотреть лайки, p2p*
+*In some systems (watch a video and rate it with likes - no consent of both parties to interact is required, in others like Upwork - it is required)*
 
-У каждого агента An есть функция – оценить результат взаимодействия RateSubjectiveN(T1(An, Am)) -> RateNM.
+Each agent `An` has a function - estimate the result of the interaction `RateSubjectiveN(T1(An, Am)) -> RateNM`.
 
-*В случае симметричного взаимодействия производятся две оценки:*
+*In the case of symmetric interaction, two estimates are made:*
 
-RateSubjectiveN(T1(An, Am)) -> RateNM
+`RateSubjectiveN(T1(An, Am)) -> RateNM`
 
-RateSubjectiveM(T1(An, Am)) -> RateMN
+`RateSubjectiveM(T1(An, Am)) -> RateMN`
 
-Каждому агенту A1, A2, ... соответствует RateObj1, RateObj2, ..., который интегрирует результаты взаимодействий, направленных к A1, A2, ...
+Each agent `A1`, `A2`, ... corresponds to `RateObj1`, `RateObj2`, ..., which integrates results of interactions directed to `A1`, `A2`, ...
 
-Существует функция, которая обновляет RateObj для A по результатам взаимодействия T:
+There is a function that updates `RateObj` for `A` based on the results of the `T` interaction:
 
-RateUpdate(RateObj_M, RateMN) -> RateObj_M_updated
-
-1. Существует репутационная система Rep
-
-2. Predict(T(Am, An)) ->
-
-Есть система Rep, предсказыва
-
-Существую
-
-По результатам каждого взаимодействия агенты
+`RateUpdate(RateObj_M, RateMN) -> RateObj_M_updated`
 
 **Why a reputation system is needed**
 
@@ -139,36 +129,36 @@ The longer the system lives, the better.
 
 **The higher the increase in satisfaction with the results of each of the interactions, the better**
 
-В общем случае
+In the general
 
-Interaction(A1, A2, context1, context2) ->
+`Interaction(A1, A2, context1, context2) ->`
 
-UpdateContentment1(Cont1) -> Cont1_updated,
+`UpdateContentment1(Cont1) -> Cont1_updated,`
 
-UpdateContentment2(Cont2) -> Cont2_updated,
+`UpdateContentment2(Cont2) -> Cont2_updated,`
 
-Взаимодействия могут быть безконтекстными, содержать один или два контекста.
+Interactions can be context-free, containing one or two contexts.
 
-Контекст Cont_n взаимодействия Tmn агента An – особые условия для взаимодействия Tmn. Например, текст задания.
+Context `Cont_n` of the `Tmn` agent `An` interaction - special conditions for the `Tmn` interaction. For example, the text of the task.
 
-Примеры двухконтекстного взаимодействия:
+Examples of two-context interaction:
 
-1. сложная сделка, где каждая из сторон делает что-то для   другой стороны. Например, услуга на услугу.
-2. знакомство двух людей; контексты в этом случае – то, с   кем бы хотел познакомиться каждый из пары
+1. a complex transaction where each party does something for the other party. For example, a service for a service
+2. the acquaintance of two people; the contexts in this case are who each of the couple would like to meet
 
-Для разных контекстов результат взаимодействия между одними и теми же агентами может быть разным.
+For different contexts, the result of interaction between the same agents may be different.
 
-Для того, чтобы оптимизировать суммарную удовлетворенность, необходимо:
+In order to optimize aggregate satisfaction, it is necessary to:
 
-1. максимизировать количество взаимодействий, увеличивающих удовлетворенность
-2. подбирать для взаимодействий таких агентов (в условии текущих контекстов), для которых суммарный прирост удовлетворенностей будет максимальным
-3. Избегать тех взаимодействий, в результате которых общая удовлетворенность понизится
+1. maximize the number of interactions that increase satisfaction
+2. select for interactions such agents (given the current contexts), for which the total increase in satisfaction will be maximum
+3. Avoid interactions that will result in lower overall satisfaction
 
-Для того, чтобы выбирать взаимодействия, для которых прирост удовлетворенностей будет максимальным, необходимо предсказывать удовлетворенности агентов.
+In order to choose the interactions for which the increase in satisfaction will be maximal, it is necessary to predict the satisfaction of the agents.
 
-PredictContentments(A1, A2, Context1, Context2) ->
+`PredictContentments(A1, A2, Context1, Context2) ->`
 
--> (∂Contentment1, ∂Contentment2)
+`-`> (∂Contentment1, ∂Contentment2)`
 
 ## WorkFi industry
 
