@@ -903,29 +903,30 @@ The judge, guided by the norms and laws in force in the community, makes a decis
 
 To minimize the likelihood of human error, the decision is made in parallel by several judges, an odd number. The judges do not see the decisions of other judges on this case.
 
-### Флоу судебного дела
+### Court case flow
 
-1.	Участник создаёт кейс, выбирая отрасль, предмет спора, размер искового требования при наличии.
-2.	Описывает подробно ситуацию.
-3.	Прикрепляется данные опонента (опонентов). 
-4.	Прикрепляет ссылки на доказательства в ipfs.  
-5.	Прикрепляет данные свидетелей в системе.
-6.	После отправки кейса, система рассылает запросы свидетелям и оппонентам.
-7.	Далее у свидетелей и оппонентов есть доступ к материалам кейса и время на то чтобы описать свою версию дела и прикрепить доказательства. Конкретные сроки прохождения процессов на усмотрение сообщества, но подразумевают присутствие здравого смысла.
-8.	После  сбора необходимых доказательств и прошествии срока. Кейс прикрепляется к рандомно выбранным судьям.
-9.	Судьи, в течение определённого сообществом времени, на основании законов сообщества и изложенных материалов, принимают решения по делу.
-10.	Окончательное решение по делу определяется автоматически на основании большинства решений судей.
-11.	Один из участников дела может подать в апеляцию
-12.	В таком случае процесс повторяется в п.8-10.
-13.	В случае идентичного решения апелляции решение автоматически утверждается.
-14.	При противоположном решении апелляции процесс повторяется в третьем составе судей. Решение третьего состава считается окончательным.
+1. The participant creates a case, choosing the industry, the subject of the dispute, the amount of the claim, if there is (any):
+2. Describes the situation in detail.
+3. The attached data of the opponent (opponents).
+4. The attached evidence links in ipfs.
+5. The attached data of witnesses in the system.
+6. The sent case (the system sends requests to witnesses and opponents).
+7. Next, witnesses and opponents have access to the case materials and time to describe their version of the case and attach evidence. The specific timing of the processes passage is up to a discretion of the community, but implies the presence of common sense.
+8. The collecting of the necessary evidence and the expiration of the deadline. The case is attached to randomly selected judges.
+9. Judges, within the time determined by the community, based on the laws of the community and the materials presented, make decisions on the case.
+10. The final decision on the case is determined automatically based on the majority decisions of the judges.
+11. One of the participants in the case may file an appeal
+12. In this case, the process is repeated in paragraphs 8-10.
+13. In case of an identical appeal decision, the decision is automatically approved.
+14. In case of the opposite decision of the appeal, the process is repeated in the third panel of judges. The decision of the third composition is considered final.
 
-### Иерархия законов  
+### Hierarchy of laws
  
-- Решения судей не должны противоречить законам сообщества, а только расширять его свойства, не переопределяя его суть.
-- Сообщество формирует законы самостоятельно как пенсорс систему.
-- Голосует за принятие тех или иных поправок и новых законов.
-- Судебные решения, при изменении законов не изменяются.
+- Decisions of judges should not contradict the laws of the community, but only expand its properties without redefining its essence.
+- The community forms laws independently as a pen-source system.
+- Vote for the adoption of certain amendments and new laws.
+- Judicial decisions will not be changed if the laws is changed.
+
 
 # Safety, anti-fraud
 
