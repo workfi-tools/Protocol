@@ -34,6 +34,16 @@ Here are some of core principles:
 6. Scam Resistance
 7. Handling of abnormally bad grades
 
+#### Protection against artificial sway/attack of lowering the profile?
+
+**Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
+
+**Case:** the user gets a batch of ones in a row - an organized attack on the profile.
+
+If the user receives an abnormal score (below half of the current average reputation), the score is frozen and the user is quarantined.
+
+If the dispute has not been opened by either party, the score is discarded.
+
 #### The Macroeconomics of Reputation
 
 ##### Usecases
@@ -1013,15 +1023,3 @@ This principle is necessary to avoid reputation bumping (cheating).
 <span style="color:red">
 	(Dima, Kirill)
 </span>
-
-# Some content
-## Protection against artificial sway/attack of lowering the profile?
-
-**Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
-
-**Case:** the user gets a batch of ones in a row - an organized attack on the profile.
-
-If the user receives an abnormal score (below half of the current average reputation), the score is frozen and the user is quarantined.
-
-If the dispute has not been opened by either party, the score is discarded.
-
