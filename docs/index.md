@@ -113,19 +113,13 @@ Reputation system is designed for use in systems, services, DAOs and communities
 
 Here are some of core principles:
 
-1. Proof of Commission
-2. Responsibility
-	1. Responsible rates
-	2. Responsible invites
-	3. Guarantors
-3. Attributive rates
-4. P2P crowdsourcing
-	1. Verification
-	2. Dispute resolution
-	3. Court system
+1. Proof of Commission (antiscam)
+2. Responsibility (for grates, invites, etc)
+3. Rates should be attributive
+4. To crowdsource as much as possible (work, information, or opinions) from community
 5. True ownership and service agnostic
 6. Scam Resistance
-7. Handling of abnormally bad grades
+7. Reputation sustainability (f.e. handling of abnormally bad grades)
 
 #### The Macroeconomics of Reputation
 
@@ -135,7 +129,7 @@ Here are some of core principles:
 
 Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
 
-**Main scenario –** solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
+**Main scenario** – solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
 
 **Side Scenarios**
 
@@ -273,25 +267,15 @@ In order to choose the interactions for which the increase in satisfaction will 
 
 ## WorkFi industry
 
+TODO: WHAt IS WORKFI, terms, intro, vision (WorkFi as industry)
+
 ### Multiple rep providers
 
 <span style="color:red">
 	YAKOV 100% made something, maybe in Miro? Or somwhere in Notion
 </span>
 
-### DAO + us
-
-<span style="color:red">
-	TODO💤
-</span>
-
-### Web2 + us
-
-<span style="color:red">
-	TODO💤
-</span>
-
-### WorkFi vision
+### WorkFi.tools mission
 
 Our mission is to deliver open-source protocols, tools, and solutions, that will:
 
@@ -308,6 +292,7 @@ Our mission is to deliver open-source protocols, tools, and solutions, that will
 # Market overview
 
 ## Web 2
+TODO: INTRO
 
 ### Habr
 
@@ -433,6 +418,7 @@ Our mission is to deliver open-source protocols, tools, and solutions, that will
 Open-source platform for reputation and near-legal relationships within communities. 
 
 ### Colony
+TODO
 
 - Web: https://colony.io
 - Whitepaper: https://colony.io/whitepaper.pdf (reputation: chapter 5)
@@ -444,6 +430,7 @@ Open-source platform for reputation and near-legal relationships within communit
 - Github: https://github.com/aragon/govern, https://github.com/aragon/aragon-court, ...
 - Networks: Eth (and Rinkeby), Polygon (and Mumbai), Harmony, BSC, Stardust
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
+TODO
 
 ### Kleros Platform Overview
 
@@ -452,7 +439,7 @@ Open-source platform for reputation and near-legal relationships within communit
 - Stage: Kleros 2.0
 - Network: ETH
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
-
+TODO
 #### Our differences
 
 - Kleros' value proposition is decentralized arbitration for dispute resolving;
@@ -562,10 +549,11 @@ UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputatio
   any person or service should have read access to it (and reputation flaws should not be hidden)
 
 
-
 # Responsibility
+TODO: intro, principle
 
-## Responsible rates
+## Responsible rates 
+TODO
 
 Scores that go against the community result in a loss.
 
@@ -662,19 +650,20 @@ Referrals can both help or hurt the inviting user: if the invitee recommends the
 </span>
 
 ## Labels, industries, categories
-
+TODO
 <span style="color:red">
 	no information
 </span>
 
 ## Reputation as multiple rates
+IN PROGRESS....
 
 <span style="color:red">
 	TODO💤 soft skills, contributing to the community, hard skills, badges, numbers,
 </span>
 
 ## Reputation use cases
-
+IN PROGRESS....
 <span style="color:red">
 	TODO💤
 </span>
@@ -1035,23 +1024,15 @@ If the dispute has not been opened by either party, the score is discarded.
 
 ## Proof of Commission
 
-<span style="color:red">
-	MOVE FROM MIRO, KIR
-</span>
-
 Proof of Commission principle (in P2P reputation systems): in order to earn 1 unit of reputation, you need to spend 1 USD in the form of commission and get a positive score as a result of paid P2P interaction.
 
 This principle does not define the recipient of the commission - it can be a community fund, a reserve pool, a service commission. However, the commission payer cannot be the sole and direct beneficiary of that commission.
 
 This principle is necessary to avoid reputation bumping (cheating).
 
-## Different usecases
-
-<span style="color:red">
-	TODO💤
-</span>
-
 # Macroeconomic parameters and mechanics to manage rep system
+
+TODO: MOVE, COMBINE, CHECK
 
 <span style="color:red">
 	how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
