@@ -540,9 +540,24 @@ TODO
 
 Scores that go against the community result in a loss.
 
-### Handling abnormal scores
+## Responsible invites (vouching)
 
-#### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
+Once a user reaches the reputation threshold, he receives an invite. This invite can be used to invite a new user to the network.
+
+The invited user, on start, gets a percentage of the reputation of the inviting user. This is to reflect that probably the better your referrer is, the better you are. Invited user profile shows their inviter. This way, the system indicates WHO is behind the new community member.
+
+Referrals can both help or hurt the inviting user: if the invitee recommends themselves as a trustworthy member of the community, they get reputation increase, and the inviter gets a proportional amount of that reputation for themselves; vice versa, reputation loss is propagated as well.
+
+## Guarantors
+
+<span style="color:red">
+	todo: review, translate
+</span>
+
+# Reputation sustainability
+## Handling abnormal scores
+
+### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
 
 If the worker receives a low score, it is quarantined. This is a mode of the score in which it is not displayed and is not accounted in the worker's overall rating (displayed by UI).
 
@@ -578,7 +593,7 @@ If the dispute is resolved in favor of A, the score is discarded.
 
 If the argument is in favor of B, A's low grade is counted instantly. Observation mode is terminated.
 
-#### The user gives the performer a 1 for non-good reason. Dispute is open
+### The user gives the performer a 1 for non-good reason. Dispute is open
 
 The user gives the performer a low score and opens a dispute.
 
@@ -588,17 +603,17 @@ Then there are three options for the development of events:
 - the dispute is resolved in the side of the performer. The score is not counted in the reputation, or a high score is given (by the arbitrator's decision)
 - the parties go to a settlement - we believe that the reputation of the performer and the customer does not suffer - both get A's (it is advantageous to go to a settlement)
 
-#### The contractor deliberately fails to complete the order. Dispute Resolution.
+### The contractor deliberately fails to complete the order. Dispute Resolution.
 
 If the contractor openly walks away from the order, the arbitrator recognizes the dispute in favor of the customer. The contractor is given a low reputation score.
 
 The contractor cannot take orders during the week.
 
-#### The performer has gone bad in life. Started to forget about everything. Depression.
+### The performer has gone bad in life. Started to forget about everything. Depression.
 
 In such a scenario, the reputation of the user tends to 0. Other users see the low reputation and do not accept the risk. The only way to fix reputation is to take on "cheap" orders, where customers are willing to take a risk and work with an unreliable performer.
 
-####  The ratio of the value of the order to the reputation received.
+###  The ratio of the value of the order to the reputation received.
 
 Very important is the ratio of the cost of the order to the reputation that the contractor gets. The idea is that the higher the cost of the order, the higher the risk for non-performance. A high risk should lead to a high reward.
 
@@ -611,21 +626,6 @@ The highest league, where the user is offered expensive orders. For the executio
 "Premier" league is the lower segment - users with a low reputation get offers at a low cost. It turns out that it takes time and effort to get to the top league.
 
 The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
-
-## Responsible invites (vouching)
-
-Once a user reaches the reputation threshold, he receives an invite. This invite can be used to invite a new user to the network.
-
-The invited user, on start, gets a percentage of the reputation of the inviting user. This is to reflect that probably the better your referrer is, the better you are. Invited user profile shows their inviter. This way, the system indicates WHO is behind the new community member.
-
-Referrals can both help or hurt the inviting user: if the invitee recommends themselves as a trustworthy member of the community, they get reputation increase, and the inviter gets a proportional amount of that reputation for themselves; vice versa, reputation loss is propagated as well.
-
-## Guarantors
-
-<span style="color:red">
-	todo: review, translate
-</span>
-
 # Rates, Attributive rates
 
 <span style="color:red">
