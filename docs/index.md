@@ -264,8 +264,6 @@ We see such a direction of development coming to life with a well-documented pro
 	YAKOV 100% made something, maybe in Miro? Or somwhere in Notion
 </span>
 
-
-
 ## WorkFi Roadmap
 
 <span style="color:red">
@@ -275,7 +273,8 @@ We see such a direction of development coming to life with a well-documented pro
 # Market overview
 
 ## Web 2
-TODO: INTRO
+
+The following is the analysis of existing web2 projects and services managing reputation and p2p communication.
 
 ### Habr
 
