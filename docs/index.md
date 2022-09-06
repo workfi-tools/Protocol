@@ -13,12 +13,6 @@ On top of this we are in process of designing the following additional systems:
 **Voting** - System of different types of voting using agent modeling and voting to satisfy community members and perform community development by creating a library of solutions for voting.
 
 **Booking** - Booking system for various purposes, using different payment systems and for particular cases.
-    
-## Glossary
-
-<span style="color:red">
-	TODO: move terms here
-</span>
 
 ## General overview of our rep system
 
