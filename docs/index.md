@@ -56,12 +56,10 @@ solution development towards what changes should be implemented in the protocol 
 
 **Reputation providers** - Interaction of a service (platform) and several reputation providers, as well as ways to aggregate information using data from several reputation providers.
 
-**Macroeconomic parameters** - Macroeconomic regulation of reputation indicators and ways of changing reputation indicators depending on internal
-economic trends within services.
+**Macroeconomic parameters** - Macroeconomic regulation of reputation indicators and ways of changing reputation indicators depending on internal economic trends within services.
 
 **Hypermarameters management** - The relationship between changes in the rating of one user and the impact of these changes on the ratings
 of other users - depending on the interaction between these particular users; as well as different options for motivating and managing reputation indicators within services
-
 
 **P2P verification** - System to determine which operations can be delegated for verification by the community itself
 (KYC, diploma, level of knowledge, subjective assessment and rating).
