@@ -532,7 +532,8 @@ UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputatio
 
 
 # Responsibility
-TODO: intro, principle
+
+Responsibility is a principle that we use in the design of some modules. We need it so that users are responsible for their actions. This way we motivate them to make better (quality) decisions. We design responsible rates and responsible invites. These mechanisms should increase the overall level of the system.
 
 ## Responsible rates 
 TODO
