@@ -75,9 +75,8 @@ of other users - depending on the interaction between these particular users; as
 
 Tech stack that we are going to use is somewhat standard (with minor choices to be made in the process):
 Solidity for EVM smart-contracts, some parts of OpenZeppelin, Hardhat + Moralis for quicker development,
-Frontier for compatibility with Polkadot parachains,
-Node.js/TypeScript/TypeChain/Mocha/Chai/Jest for autotesting, Solhint/Prettier/Husky/ESLint for good code style,
-presumably Laika, solidity-docgen and some other infrastructure tools.
+Frontier for compatibility with Polkadot parachains, Node.js/TypeScript/TypeChain/Mocha/Chai/Jest forautotesting,
+Solhint/Prettier/Husky/ESLint for good code style, presumably Laika, solidity-docgen and some other infrastructure tools.
 
 ### Principles
 
