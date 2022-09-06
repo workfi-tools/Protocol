@@ -1,6 +1,8 @@
 # Reputation systems
 
-Advanced reputation system is our main focus and a basis for using by external services.
+Based on in-depth extensive market research, we develop protocols, create tools, solutions and libraries for work processes organization to be used by related DAOs, communities, and companies. We develop and work out in detail high-standard protocols and support our protocol solutions with an implementation for EVM-compatible blockchains on smart contracts in Solidity.
+
+The core idea behind our solutions is the reputation system.
 
 **Reputation system** - System of highly configurable reputation system as a core and different services that relies on it.
 
