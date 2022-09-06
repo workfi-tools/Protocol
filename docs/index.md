@@ -94,7 +94,43 @@ Here are some of core principles:
 
 #### The Macroeconomics of Reputation
 
-##### Usecases
+##### Macroeconomic parameters and mechanics to manage rep system
+
+<span style="color:red">
+	how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
+</span>
+
+##### Behaviors to be encouraged
+
+<span style="color:red">
+	TODO: ???
+</span>
+
+##### Configurator
+
+<span style="color:red">
+	TODO: ???
+</span>
+
+##### Protocol parameters affecting behavior patterns
+
+##### Client of a new worker will get additional +rep
+
+<span style="color:red">
+	TODO: ???
+</span>
+
+##### Community-scoped parameters
+
+<span style="color:red">
+	TODO: ???
+</span>
+
+##### What can protocol or communities do by adjusting the parameters
+
+<span style="color:red">
+	TODO: ???
+</span>
 
 ##### Features
 
@@ -1010,46 +1046,6 @@ Proof of Commission principle (in P2P reputation systems): in order to earn 1 un
 This principle does not define the recipient of the commission - it can be a community fund, a reserve pool, a service commission. However, the commission payer cannot be the sole and direct beneficiary of that commission.
 
 This principle is necessary to avoid reputation bumping (cheating).
-
-# Macroeconomic parameters and mechanics to manage rep system
-
-TODO: MOVE, COMBINE, CHECK
-
-<span style="color:red">
-	how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
-</span>
-
-## Behaviors to be encouraged
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-## Configurator
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-## Protocol parameters affecting behavior patterns
-
-### Client of a new worker will get additional +rep
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-### Community-scoped parameters
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-## What can protocol or communities do by adjusting the parameters
-
-<span style="color:red">
-	TODO: ???
-</span>
 
 # Tech
 
