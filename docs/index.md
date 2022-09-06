@@ -21,81 +21,47 @@ and build commercial projects on top of them (which defines our long-term intere
 
 ![Overview](overview.jpg)
 
-#### Guarantee
-
-Guarantee of the fact that the invited user fulfills his obligations. This part affects both: the inviter's rating
+**Guarantee** - Guarantee of the fact that the invited user fulfills his obligations. This part affects both: the inviter's rating
 as well as the invited user's rating.
 
-#### Responsible invites
-
-Responsible attitude towards who a person invites to use the platform. The invitation can be withdrawn if the invited
+**Responsible invites** - Responsible attitude towards who a person invites to use the platform. The invitation can be withdrawn if the invited
 users do not fulfill their obligations. This part affects the inviter's rating as well.
 
-#### Responsible rates
-
-Responsible attitude to how the user rates input of other members of the community, understanding the consequences
+**Responsible rates** - Responsible attitude to how the user rates input of other members of the community, understanding the consequences
 of his ratings for users and for his own rating level.
 
-#### Attributive rates
+**Attributive rates** - Changes in reputation indicators depending on the user's competencies (software, hard skills, area of knowledge and work).
 
-Changes in reputation indicators depending on the user's competencies (software, hard skills, area of knowledge and work).
+**Rates typology** - Relevant options for categorizing the most appropriate ways to rate users in certain cases.
 
-#### Rates typology
+**Soft Skills (Community Development)** - System of protocols for giving feedback to community users according to their soft skills in the most appropriate and efficient way.
 
-Relevant options for categorizing the most appropriate ways to rate users in certain cases.
+**Hard Skills (Community Development)** - System of protocols for giving feedback to community users according to their hard skills in the most appropriate and efficient way.
 
-#### Soft Skills (Community Development)
-
-System of protocols for giving feedback to community users according to their soft skills in the most appropriate
-and efficient way.
-
-#### Hard Skills (Community Development)
-
-System of protocols for giving feedback to community users according to their hard skills in the most appropriate and efficient way.
-
-#### Community contribution
-
-Community development system, which includes ways to motivate and increase the level of user involvement
+**Community contribution** - Community development system, which includes ways to motivate and increase the level of user involvement
 and contribution to the community.
 
-#### Proof of commission
+**Proof of commission** - Algorithm for verifying user actions, including resistance to scam and fraudulent actions.
 
-Algorithm for verifying user actions, including resistance to scam and fraudulent actions.
-
-#### Anti fraud
-
-Analysis and evaluation of use cases in which users can fraudulently raise their reputation, create bots;
+**Anti fraud** - Analysis and evaluation of use cases in which users can fraudulently raise their reputation, create bots;
 solution development towards what changes should be implemented in the protocol to prevent such actions.
-#### Reputation providers
 
-Interaction of a service (platform) and several reputation providers, as well as ways to aggregate information
-using data from several reputation providers.
+**Reputation providers** - Interaction of a service (platform) and several reputation providers, as well as ways to aggregate information using data from several reputation providers.
 
-#### Macroeconomic parameters
-Macroeconomic regulation of reputation indicators and ways of changing reputation indicators depending on internal
+**Macroeconomic parameters** - Macroeconomic regulation of reputation indicators and ways of changing reputation indicators depending on internal
 economic trends within services.
 
-#### Hypermarameters management
-
-The relationship between changes in the rating of one user and the impact of these changes on the ratings
-of other users - depending on the interaction between these particular users; as well as different options
-for motivating and managing reputation indicators within services
+**Hypermarameters management** - The relationship between changes in the rating of one user and the impact of these changes on the ratings
+of other users - depending on the interaction between these particular users; as well as different options for motivating and managing reputation indicators within services
 
 
-#### P2P verification
-
-System to determine which operations can be delegated for verification by the community itself
+**P2P verification** - System to determine which operations can be delegated for verification by the community itself
 (KYC, diploma, level of knowledge, subjective assessment and rating).
 
-#### Dispute resolution
-
-System of involving qualified competent users to disputable cases in order to resolve conflict situations
+**Dispute resolution** - System of involving qualified competent users to disputable cases in order to resolve conflict situations
 (appeal, dispute, controversial cases).
 
-#### Court system
-
-A more complex and expensive conflict resolution system for serious situations - inspired by classical law.
-The main focus is on the values of the community.
+**Court system** - A more complex and expensive conflict resolution system for serious situations - inspired by classical law. The main focus is on the values of the community.
 
 #### Tech stack
 
