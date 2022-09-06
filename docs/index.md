@@ -71,7 +71,7 @@ of other users - depending on the interaction between these particular users; as
 
 **Court system** - A more complex and expensive conflict resolution system for serious situations - inspired by classical law. The main focus is on the values of the community.
 
-#### Tech stack
+### Tech stack
 
 Tech stack that we are going to use is somewhat standard (with minor choices to be made in the process):
 Solidity for EVM smart-contracts, some parts of OpenZeppelin, Hardhat + Moralis for quicker development,
