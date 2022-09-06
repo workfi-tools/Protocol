@@ -240,14 +240,6 @@ In order to choose the interactions for which the increase in satisfaction will 
 
 ## WorkFi industry
 
-TODO: WHAt IS WORKFI, terms, intro, vision (WorkFi as industry)
-
-### Multiple rep providers
-
-<span style="color:red">
-	YAKOV 100% made something, maybe in Miro? Or somwhere in Notion
-</span>
-
 ### WorkFi.tools mission
 
 Our mission is to deliver open-source protocols, tools, and solutions, that will:
@@ -255,6 +247,24 @@ Our mission is to deliver open-source protocols, tools, and solutions, that will
 - accelerate the development of the WorkFi industry;
 - be useful in community/DAO-related startups;
 - make web3 products and services easier to implement.
+
+### WorkFi vision
+
+Due to the fact that workflows are now being actively built in a remote format, the demand for organizing online interaction between people is growing. The issue of organizing work in companies, among individual entrepreneurs and freelancers is raised more and more often nowadays. In this way, a whole WorkFi industry emerges. 
+
+This industry is at the very beginning of its development, and with our initiatives, solutions, and technical support, we want this direction to thrive and expand further.
+
+We develop thoroughly detailed open source solutions and create convenient tools which can be implemented into process organization workflows, DAO and community-related projects to be actively used by associated companies, communities and teams. Our solutions have the potential to boost the entire industry and define its boundaries. 
+
+We see such a direction of development coming to life with a well-documented protocol-first approach, diverse use cases, scenarios, and usage patterns, where solutions and supporting tools, which we create, are used as a basis for further usage and customized development by other companies and teams.
+
+### Multiple rep providers
+
+<span style="color:red">
+	YAKOV 100% made something, maybe in Miro? Or somwhere in Notion
+</span>
+
+
 
 ## WorkFi Roadmap
 
