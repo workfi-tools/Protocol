@@ -19,7 +19,7 @@ and build commercial projects on top of them (which defines our long-term intere
 
 ### Project Details
 
-![Overview](overview.png)
+![Overview](overview.jpg)
 
 #### Guarantee
 
