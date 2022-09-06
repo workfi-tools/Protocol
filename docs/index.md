@@ -98,28 +98,6 @@ Here are some of core principles:
 
 ##### Usecases
 
-**P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
-
-Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
-
-**Main scenario** – solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
-
-**Side Scenarios**
-
-1. The outstaff team manager vouches for the quality of all team members
-2. A top-notch renowned expert audits the performer's competencies and vouches for him in the event of a successful test
-3. Course instructor vouches for his students - performers on the platform, and helps them in case of problems to successfully perform tasks
-4. Professional guarantors are community members who are good at identifying qualifications and predicting the quality of services provided by the performer. Possibly help with the most difficult cases to avoid negative evaluations.
-
-**How it works**
-
-Let's take the basic scenario as an example.
-
-**Background**. There is some community S with a reputation system R, in which scientific experts advise each other for a fee. There is a respected member of the community with a high reputation (20K) named A. There is a new member of the community, B, who is also a high-level expert, but has just registered on the platform and his reputation is 0. A and B know each other well.
-
-1. B asks A to act as his guarantor, and A agrees.
-2. A with the UI calls the method in R: R.guarantee()
-
 ##### Features
 
 ###### Attributive rates
@@ -553,9 +531,27 @@ Referrals can both help or hurt the inviting user: if the invitee recommends the
 
 ## Guarantors
 
-<span style="color:red">
-	todo: review, translate
-</span>
+**P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
+
+Guarantor is responsible by its reputation for the assignee for the entire term of the guarantee given. In case the guarantor receives low grades, it decreases the reputation of the guarantor. In case of positive evaluations it increases. The rate of increase and decrease of the reputation of the guarantor is regulated by the set coefficients and is one of the tools for tuning the reputation macroeconomics.
+
+**Main scenario** – solve the problem when a new member of the community has no reputation at all and because of this it can be very difficult for him to get the first orders and prove himself
+
+**Side Scenarios**
+
+1. The outstaff team manager vouches for the quality of all team members
+2. A top-notch renowned expert audits the performer's competencies and vouches for him in the event of a successful test
+3. Course instructor vouches for his students - performers on the platform, and helps them in case of problems to successfully perform tasks
+4. Professional guarantors are community members who are good at identifying qualifications and predicting the quality of services provided by the performer. Possibly help with the most difficult cases to avoid negative evaluations.
+
+**How it works**
+
+Let's take the basic scenario as an example.
+
+**Background**. There is some community S with a reputation system R, in which scientific experts advise each other for a fee. There is a respected member of the community with a high reputation (20K) named A. There is a new member of the community, B, who is also a high-level expert, but has just registered on the platform and his reputation is 0. A and B know each other well.
+
+1. B asks A to act as his guarantor, and A agrees.
+2. A with the UI calls the method in R: R.guarantee()
 
 # Reputation sustainability
 
