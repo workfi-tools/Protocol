@@ -536,7 +536,10 @@ UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputatio
 Responsibility is a principle that we use in the design of some modules. We need it so that users are responsible for their actions. This way we motivate them to make better (quality) decisions. We design responsible rates and responsible invites. These mechanisms should increase the overall level of the system.
 
 ## Responsible rates 
-TODO
+
+<span style="color:red">
+	TODO🔥
+</span>
 
 Scores that go against the community result in a loss.
 
@@ -555,6 +558,7 @@ Referrals can both help or hurt the inviting user: if the invitee recommends the
 </span>
 
 # Reputation sustainability
+
 ## Handling abnormal scores
 
 ### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
