@@ -272,9 +272,33 @@ We see such a direction of development coming to life with a well-documented pro
 
 ### Multiple rep providers
 
-<span style="color:red">
-	YAKOV 100% made something, maybe in Miro? Or somwhere in Notion
-</span>
+True ownership is a principle that is opposite to reputation provider “dictatorship”, or an ability to provide read/write access to reputation selectively, restricting some [reputation consuming] services and allowing others (perhaps affiliated with them), and/or deleting/modifying one’s reputation bypassing the general procedure of reputation modifying for services. It also means that the reputation owner has to explicitly agree that a service is allowed to modify their reputation or some of its aspects (ideally, a service has to make it perfectly clear the rules of reputation modification).
+
+It seems that there can be aspect ratings/points/.. (ex: trustworthiness 0.9, Solidity dev 100500, bridge building +100/-1000, .. 5⭐, 1⭐⭐, 3⭐⭐⭐, 10⭐⭐⭐⭐, 67⭐⭐⭐⭐⭐), invitations/vouchings (ex: 3 left) and invited users (their reputation should affect that of vouched user), but may be something else too.
+
+Service agnostic means that a reputation provider should provide read-only access to all the reputation aspects to anybody, in the following form:
+
+```
+[
+  {
+    "name": "trustworthiness",
+    todo: describe other bits
+  },
+  {
+    "badge-name": "senior JS dev",
+  },
+  todo: describe the invitations/...
+  ...
+]
+```
+
+How to store reputation:
+
+- presumably **non-transferrable** tokens (FT for reputation sections, NFT for badges)
+- unification of hard skills:
+* synonym prevention/detection and handling (there are services and reputation providers, they can call the same dev, coding, development, etc.)
+* homonyms (design in different contexts can mean web, industrial and typography, it would be nice if a web designer or UX designer does not “suddenly” become a great industrial designer)
+* hierarchy: dev/frontend/js/react - related things, a good react developer is a good frontend developer, but not vice versa, and in theory this should be taken into account
 
 ## WorkFi Roadmap
 
