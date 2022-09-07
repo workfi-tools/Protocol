@@ -412,11 +412,37 @@ The following is the analysis of existing web2 projects and services managing re
 Open-source platform for reputation and near-legal relationships within communities. 
 
 ### Colony
-TODO
 
 - Web: https://colony.io
-- Whitepaper: https://colony.io/whitepaper.pdf (reputation: chapter 5)
+- Whitepaper: https://colony.io/whitepaper.pdf
 - Github: https://github.com/joincolony
+
+#### Description
+
+Due to the combined complexity of reputation scores across multiple colonies, domains, and
+skills, reputation scores cannot be stored or calculated on-chain. Instead, the calculations will all
+take place off-chain, the results of which will be reported to the blockchain by participating CLNY
+holders — in a process resembling a proof-of-stake blockchain consensus protocol. This is called Reputation Mining. While the calculation cannot be done on-chain and a correct submission can never be proved true, an incorrect calculation can always be proved to be wrong.
+
+The Colony maintains the reputation tree with the following information in form of key-value pair:
+
+- address of the colony the reputation is in
+- account address holding the reputation
+- skill id of the reputation
+- numerical value of the reputation
+- unique per-leaf id (used in reputation mining)
+
+All individual reputations are assembled into the Reputation Tree which is a Merkle-Patricia
+tree of all individual reputations in a colony, as well as the total reputation of each type held by
+the users in each colony. The leaves that represent these colony-wide totals are indicated by setting
+user to zero. These leaves are then inserted into the tree.
+
+All Colony Network Token holders are eligible to become miners and participate in the reputation
+update process. To participate in the mining process, Colony Network Token holders must stake some of their tokens to become 'reputation miners'.
+
+#### Our differences
+
+- We have the similar main idea of participation in the reputation update process. But we don't "mine" the reputation. Any Token staking is not required as well.
 
 ### Aragon Court & Aragon Govern platform review
 
