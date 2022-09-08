@@ -1,5 +1,7 @@
 # Reputation systems
 
+## General
+
 Based on in-depth extensive market research, we develop protocols, create tools, solutions and libraries for work processes organization to be used by related DAOs, communities, and companies. We develop and work out in detail high-standard protocols and support our protocol solutions with an implementation for EVM-compatible blockchains on smart contracts in Solidity.
 
 The core idea behind our solutions is the reputation system.
@@ -14,7 +16,7 @@ On top of this we are in process of designing the following additional systems:
 
 **Booking** - Booking system for various purposes, using different payment systems and for particular cases.
 
-## General overview of our rep system
+### General overview of our rep system
 
 WorkFi Tools are open source solutions to boost the WorkFi industry,
 from decentralized freelance platforms to tools for complicated business processes.
@@ -25,7 +27,7 @@ The implementation is supposed to be a set of smart-contracts for EVM-compatible
 Our team is eager to both create Open Source solutions (which are the subject of this proposal)
 and build commercial projects on top of them (which defines our long-term interest in maintaining the project).
 
-### Project Details
+#### Project Details
 
 ![Overview](overview.jpg)
 
@@ -69,14 +71,14 @@ of other users - depending on the interaction between these particular users; as
 
 **Court system** - A more complex and expensive conflict resolution system for serious situations - inspired by classical law. The main focus is on the values of the community.
 
-### Tech stack
+#### Tech stack
 
 Tech stack that we are going to use is somewhat standard (with minor choices to be made in the process):
 Solidity for EVM smart-contracts, some parts of OpenZeppelin, Hardhat + Moralis for quicker development,
 Frontier for compatibility with Polkadot parachains, Node.js/TypeScript/TypeChain/Mocha/Chai/Jest forautotesting,
 Solhint/Prettier/Husky/ESLint for good code style, presumably Laika, solidity-docgen and some other infrastructure tools.
 
-### Principles
+#### Principles
 
 The reputation system is a configurable set of principles and rules embodied in a system of smart contracts written in the Solidity language.
 
@@ -92,41 +94,41 @@ Here are some of core principles:
 6. Scam Resistance
 7. Reputation sustainability (f.e. handling of abnormally bad grades)
 
-#### The Macroeconomics of Reputation
+##### The Macroeconomics of Reputation
 
-##### Macroeconomic parameters and mechanics to manage rep system
+###### Macroeconomic parameters and mechanics to manage rep system
 
 <span style="color:red">
 	how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
 </span>
 
-##### Behaviors to be encouraged
+###### Behaviors to be encouraged
 
 <span style="color:red">
 	TODO: ???
 </span>
 
-##### Configurator
+###### Configurator
 
 <span style="color:red">
 	TODO: ???
 </span>
 
-##### Protocol parameters affecting behavior patterns
+###### Protocol parameters affecting behavior patterns
 
-##### Client of a new worker will get additional +rep
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-##### Community-scoped parameters
+###### Client of a new worker will get additional +rep
 
 <span style="color:red">
 	TODO: ???
 </span>
 
-##### What can protocol or communities do by adjusting the parameters
+###### Community-scoped parameters
+
+<span style="color:red">
+	TODO: ???
+</span>
+
+###### What can protocol or communities do by adjusting the parameters
 
 <span style="color:red">
 	TODO: ???
@@ -175,7 +177,7 @@ For some services, you might consider a grading system in the form of smiley fac
 	TODO: ???
 </span>
 
-## Reputation model
+### Reputation model
 
 **Main Terms**
 
@@ -250,9 +252,9 @@ In order to choose the interactions for which the increase in satisfaction will 
 
 `-> (∂Contentment1, ∂Contentment2)`
 
-## WorkFi industry
+### WorkFi industry
 
-### WorkFi.tools mission
+#### WorkFi.tools mission
 
 Our mission is to deliver open-source protocols, tools, and solutions, that will:
 
@@ -260,7 +262,7 @@ Our mission is to deliver open-source protocols, tools, and solutions, that will
 - be useful in community/DAO-related startups;
 - make web3 products and services easier to implement.
 
-### WorkFi vision
+#### WorkFi vision
 
 Due to the fact that workflows are now being actively built in a remote format, the demand for organizing online interaction between people is growing. The issue of organizing work in companies, among individual entrepreneurs and freelancers is raised more and more often nowadays. In this way, a whole WorkFi industry emerges. 
 
@@ -270,7 +272,7 @@ We develop thoroughly detailed open source solutions and create convenient tools
 
 We see such a direction of development coming to life with a well-documented protocol-first approach, diverse use cases, scenarios, and usage patterns, where solutions and supporting tools, which we create, are used as a basis for further usage and customized development by other companies and teams.
 
-### Multiple rep providers
+#### Multiple rep providers
 
 True ownership is a principle that is opposite to reputation provider “dictatorship”, or an ability to provide read/write access to reputation selectively, restricting some [reputation consuming] services and allowing others (perhaps affiliated with them), and/or deleting/modifying one’s reputation bypassing the general procedure of reputation modifying for services. It also means that the reputation owner has to explicitly agree that a service is allowed to modify their reputation or some of its aspects (ideally, a service has to make it perfectly clear the rules of reputation modification).
 
@@ -300,21 +302,21 @@ How to store reputation:
 * homonyms (design in different contexts can mean web, industrial and typography, it would be nice if a web designer or UX designer does not “suddenly” become a great industrial designer)
 * hierarchy: dev/frontend/js/react - related things, a good react developer is a good frontend developer, but not vice versa, and in theory this should be taken into account
 
-## WorkFi Roadmap
+### WorkFi Roadmap
 
 <span style="color:red">
 	6 months, 2 years (vision) TODO🔥
 </span>
 
-# Market overview
+## Market overview
 
-## Web 2
+### Web 2
 
 The following is the analysis of existing web2 projects and services managing reputation and p2p communication.
 
-### Amazon
+#### Amazon
 
-#### Customer Reviews
+##### Customer Reviews
 
 You can submit reviews for items listed on Amazon. 
 
@@ -322,7 +324,7 @@ Customer Reviews help customers to learn more about the product and decide wheth
 
 Amazon don't allow anyone to write reviews as a form of promotion.
 
-#### Amazon Verified Purchase Reviews
+##### Amazon Verified Purchase Reviews
 
 An "Amazon Verified Purchase" review means that Amazon have verified that the person writing the review purchased or used the product on Amazon, and didn't receive the product at a big discount.
 
@@ -330,7 +332,7 @@ An "Amazon Verified Purchase" review means that Amazon have verified that the pe
 
 Reviews that are not marked "Amazon Verified Purchase" are valuable as well.
 
-#### How  Product Star Ratings are Calculated
+##### How  Product Star Ratings are Calculated
 
 Amazon calculates a product's star rating using machine-learned models instead of a simple average.
 
@@ -338,19 +340,19 @@ These models take into account factors such as how recent the rating or review i
 
 Amazon do not consider customer ratings without an Amazon Verified Purchase status in a product's overall star rating until a customer adds more details in the form of text, image, or video
 
-#### Amazon Vine
+##### Amazon Vine
 
 Amazon Vine is a program that enables a select group of Amazon customers to post opinions about new and pre-release items to help their fellow customers to make educated purchasing decisions.
 
 Customers are invited to become Amazon Vine Voices based on the trust that they have earned in the Amazon community for writing accurate and insightful reviews. 
 
-#### Badges
+##### Badges
 
 A badge is a symbol that tells other Amazon customers something interesting about you.
 
 You can earn badges by creating useful content on Amazon. Some badges may be temporary, and some badges may look different, depending on where you see them.
 
-#### **Types of Badges**
+##### **Types of Badges**
 
 There are many different badges. Here is a brief list of our badges and what they mean.
 
@@ -376,22 +378,22 @@ This is an official Amazon representative. This is a permanent badge.
 
 ****AUTHOR, ARTIST, MANUFACTURER**** These badges are given to verified representatives of items listed on Amazon, such as the author, artist, or manufacturer of a product. This is a permanent badge.
 
-#### **Vine Voice**
+##### **Vine Voice**
 
 This customer is a member of Amazon [VineTM Voice](https://www.amazon.com/gp/vine/help), an invitation only program that gives Amazon reviewers advance access to not-yet-released products for the purpose of writing reviews. A review written as part of the Vine™ Voice program always includes this label: "Amazon Vine™ Review" on the initial product detail page and "Customer review from the Amazon Vine™ Program" when viewing the entire review. This is a permanent badge.
 
-#### Contributor Rewards
+##### Contributor Rewards
 
 Contributor Rewards is a program that recognizes Top Contributors who contribute quality content to Spark and the Idea Lists Community.
 
-#### Claim Your Contributor Rewards
+##### Claim Your Contributor Rewards
 
 Rewards are determined based on the quality of content posted and the amount of customer engagement the content receives.
 
 If you are selected for a reward, you will receive an email that includes the details of your reward amount.
 
 
-### Booking.com
+#### Booking.com
 
 Booking collect reviews once a guest checks out, we send them an email asking them to review their stay with you. They have 90 days to do this.
 
@@ -420,7 +422,7 @@ Booking.com don’t play any role in deciding owners score themselves. Booking.c
 
 Also Booking.com collect the overall score for each review separately from the ratings guests give for different categories. They do this because the six categories don’t always cover everything that a guest might consider when they rate their stay, while the overall score represents their experience as a whole. This means that it’s normal for the overall score to be different from the category ratings.
 
-### Habr
+#### Habr
 
 Karma is a tool for self-regulation in the community.
 
@@ -447,7 +449,7 @@ User A can vote for user B's karma only once. In this case, he can change his de
 
 0️⃣ Once, for all time, the user may reset his karma. This may be required if the user's karma has gone into deep deficit. It's really hard to restore your karma if you're in readonly mode and can't write/comment anything... Those who voted for that user's karma before can vote for their karma again (in + and in -)
 
-#### Rating
+##### Rating
 
 > In essence, the rating is a parameter that reflects the community's interest in the user's activity on the resource.
 > 
@@ -456,34 +458,34 @@ Rating is the sum of the likes, to the posts and comments of the user.
 
 It is noteworthy that the rating can "cool down": over time, it tends to zero. That is, the most active members of the community - people who regularly publish relevant posts and comments - get to the top of the hubra.
 
-#### RecoveryMode
+##### RecoveryMode
 
 This is the mode to which a user with karma [-30; -11] gets.
 
 In this mode, the user can write 1 post a week - the last chance to accumulate karma and get out of the "hole".
 
-### Yandex
+#### Yandex
 
-#### Рейтинг
+##### Рейтинг
 
 Рейтинг = средневзвешенное последних 150 оценок пользователей: чем «свежее» оценка, тем больший у неё вес. 
 
 ❗Значит, низкую оценку можно “протолкнуть” в конец, выполняя больше заказов.
 
-#### Приоритет
+##### Приоритет
 
 Этот механизм позволяет определять исполнителя заказа. У кого выше приоритет, тому и предлагается заказ. 
 
 Нам это не очень полезно, но могут быть интересные механики.
 
-#### Активность
+##### Активность
 
 Баллы Активности начисляются за каждый выполненный заказ. И снимаются, пропуск или отмену заказа. Если Активность упадёт слишком низко, заказы перестанут поступать. 
 
 > Чем дальше находится пассажир или отправитель, тем больше баллов вы получите за принятый заказ. И тем меньше снимется за пропуск.
 
 
-### Elo
+#### Elo
 
 Система,  используется для расчета очков в играх на 2х участников. Самое известное применение – шахматы.
 
@@ -493,26 +495,26 @@ In this mode, the user can write 1 post a week - the last chance to accumulate k
 
 Также, участник с высоким рейтингом помогает другому участнику с высоким рейтингом – относительно невысокий рост рейтинга.
 
-### Профи.ру
+#### Профи.ру
 
 Информации на сайте нет.
 
 Зато есть куча инструкций, как поднять рейтинг на сайте. В основном, все сводится к накрутке через агентства ([https://100review.ru](https://100review.ru/))
 
-### AirBnB
+#### AirBnB
 
 Объекта размещения оценивается по категориям + общая оценка.
 
 Гость может поставить 5 за чистоту, уют и расположение и, при этом, поставить общую оценку 2.
 
-#### Запрашивать подтверждение (обращать внимание на нелогичность оценки)
+##### Запрашивать подтверждение (обращать внимание на нелогичность оценки)
 
 Сервис переспрашивает пользователя, если итоговая оценка ниже средней за критерии. В сценарии выше, сервис должен показать предупреждение, что итоговая оценка ниже оценок по категориям. 
 
 > … повысились общие оценки, которые гости ставят хозяевам. … число 3-звездочных отзывов снизилось на 2,8%, а 2-зведочных — на 3,9%. Хотя эти цифры могут показаться незначительными, они заметно влияют на точность системы отзывов, и хозяева от этого выигрывают.
 > 
 
-#### Уточнять, почему именно низкая оценка.
+##### Уточнять, почему именно низкая оценка.
 
 На примере оценки местоположения.
 
@@ -523,26 +525,26 @@ In this mode, the user can write 1 post a week - the last chance to accumulate k
 
 Т.о., когда клиент хочет поставить низкую оценку, сервис уточняет, действительно ли объект *заслужил* такую оценку.
 
-## Web 3
+### Web 3
 
-### Your Justice
+#### Your Justice
 
 - Web: https://www.yourjustice.life, https://yj.life
 - Github: https://github.com/YourJustice-Live/
 - Stage: Alpha
 - Networks: Poligon (testnet), BSC (testnet)
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
-#### Description
+##### Description
 
 Open-source platform for reputation and near-legal relationships within communities. 
 
-### Colony
+#### Colony
 
 - Web: https://colony.io
 - Whitepaper: https://colony.io/whitepaper.pdf
 - Github: https://github.com/joincolony
 
-#### Description
+##### Description
 
 Due to the combined complexity of reputation scores across multiple colonies, domains, and
 skills, reputation scores cannot be stored or calculated on-chain. Instead, the calculations will all
@@ -565,18 +567,18 @@ user to zero. These leaves are then inserted into the tree.
 All Colony Network Token holders are eligible to become miners and participate in the reputation
 update process. To participate in the mining process, Colony Network Token holders must stake some of their tokens to become 'reputation miners'.
 
-#### Our differences
+##### Our differences
 
 - We have the similar main idea of participation in the reputation update process. But we don't "mine" the reputation. Any Token staking is not required as well.
 
-### Aragon Court & Aragon Govern platform review
+#### Aragon Court & Aragon Govern platform review
 
 - Web: https://court.aragon.org, https://govern.aragon.org
 - Github: https://github.com/aragon/govern, https://github.com/aragon/aragon-court, ...
 - Networks: Eth (and Rinkeby), Polygon (and Mumbai), Harmony, BSC, Stardust
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 
-#### Description
+##### Description
 
 The Aragon Network is an Aragon organization that provides infrastructure and services to users of the Aragon platform, and is governed by ANT holders. The existing Aragon infrastructure enables users to create and manage organizations. Each Aragon organization exists as a set of smart contracts that define the organization's stakeholders and their associated rights and privileges.
 
@@ -593,14 +595,14 @@ Aa for fees Aragon includes:
 - Subscription Fee:  A subscription fee is imposed on organizations that choose to use the Court as an arbitration provider. 
 - Dispute Fee: Dispute fees are captured at the time a dispute or appeal occurs and are calculated based on a flat amount multiplied by the amount of juror stake selected in the dispute or appeal round.
 
-#### Our differences / similaritues
+##### Our differences / similaritues
 
 - We are adopting Aragon's 'Dispute list' which allows to aiew all live disputes or only the ones you are adjudicating. The the list one can explore the details, evidence, and timeline for any dispute.
 - Like Aragon we a dealing with some kind of reward / dispute fee.
 - We don't require to host any tokens for creating votes. In Aragon Governance authority over the Court is granted to ANT holders by way of an Aragon organizatio. Creating votes requires depositing 1000 ANT.
 - Generally our 'dispute resolution' subsystem is a 'side product'. Our main focus is 'reputation'.
 
-### Kleros Platform Overview
+#### Kleros Platform Overview
 
 - Web: https://kleros.io
 - GitHub: https://github.com/kleros
@@ -608,20 +610,20 @@ Aa for fees Aragon includes:
 - Network: ETH
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 TODO
-#### Our differences
+##### Our differences
 
 - Kleros' value proposition is decentralized arbitration for dispute resolving;
   our vision is a more general as we consider dispute resolution a part of reputation system.
   A solution like Kleros might be used as a submodule of our system.
 
-### DREP Overview
+#### DREP Overview
 
 - Web: https://www.drep.org , https://medium.com/drep-family
 - Github: https://github.com/drep-project
 - Stage: is not actively maintained - last commit was in 2021
 - News: https://t.me/drep_foundation_announcements
 
-#### Description
+##### Description
 
 From the main page:
 
@@ -633,13 +635,13 @@ From [docs](https://docs.drep.org/technology-advantages/reputation/):
 
 DREP Reputation System is a comprehensive close-loop ecosystem which includes a general reputation protocol, reputation pipeline interface, reputation on-chain data storage and algorithm library, reputation reward system, reputation value account management and fake account identification mechanisms. In the ecosystem, users’ behavior is linked to their reputation which will be evaluated by multiple interacting parties. Users will also receive complete real-time updates on their reputation.
 
-### Ontology
+#### Ontology
 
 - Web: https://ont.io/
 - Github: https://github.com/ontio
 - Stage: in production
 
-#### Description
+##### Description
 
 Ontology implements a series of blockchain based protocols, including Orange - a Reputation Protocol (a community-driven project). 
 
@@ -649,14 +651,14 @@ Ontology has a trust search engine which provides authentication and connects se
 
 > At Ontology, we envision a future where your identity and data are protected through encryption. Your on and off-chain data are secured without stress or worry. With **ONT ID**, you can protect your identity and data without constant oversight or maintenance. Using ONT ID prevents malicious actors from hijacking your identity or accessing personal information. We're building a future that guarantees you total control over who can access, see, and use your online data and identity.
 
-### Orange protocol
+#### Orange protocol
 
 - Web: https://www.orangeprotocol.io
 - GitHub: https://github.com/orange-protocol
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 - Networks: Ethereum, Polygon, BSC
 
-#### Orange protocol description
+##### Orange protocol description
 
 From [overview](https://docs.orangeprotocol.io/overview):
 
@@ -666,7 +668,7 @@ From [overview](https://docs.orangeprotocol.io/overview):
 > 
 > Orange is a reputation and trust minting protocol that aggregates data and Web3 reputation models to generate comprehensive reputation proofs in the form of Verifiable Credentials and NFTs.
 
-#### Our differences
+##### Our differences
 
 - Orange doesn't provide means to create reputation (via voting or other means),
   it only helps with aggregating on-chain data to interpret facts and behavior as reputation aspects.
@@ -674,7 +676,7 @@ From [overview](https://docs.orangeprotocol.io/overview):
   to reinvent the wheel. We believe that ready-to-use reputation aspects and procedures for their modification
   will be much more helpful for the industry
 
-### UTU
+#### UTU
 
 - Web: https://utu.io
 - GitHub: https://github.com/utu-protocol
@@ -682,7 +684,7 @@ From [overview](https://docs.orangeprotocol.io/overview):
 - Networks: Ethereum, bridged to BSC, will be bridged to Polygon, and to other chains
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
 
-#### Description
+##### Description
 
 From main page:
 
@@ -706,7 +708,7 @@ From the protocol page:
 
 UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputation count.
 
-#### Our differences
+##### Our differences
 
 - UTU focuses on providing 'trust' which is an important aspect of reputation but not enough for WorkFi
   as it doesn't tell anything about the skills/quality of previous work;
@@ -717,11 +719,11 @@ UTU uses an own fungible, non-transferable token (UTU Trust Token) for reputatio
   any person or service should have read access to it (and reputation flaws should not be hidden)
 
 
-# Responsibility
+## Responsibility
 
 Responsibility is a principle that we use in the design of some modules. We need it so that users are responsible for their actions. This way we motivate them to make better (quality) decisions. We design responsible rates and responsible invites. These mechanisms should increase the overall level of the system.
 
-## Responsible rates 
+### Responsible rates 
 
 <span style="color:red">
 	TODO🔥
@@ -729,7 +731,7 @@ Responsibility is a principle that we use in the design of some modules. We need
 
 Scores that go against the community result in a loss.
 
-## Responsible invites (vouching)
+### Responsible invites (vouching)
 
 Once a user reaches the reputation threshold, he receives an invite. This invite can be used to invite a new user to the network.
 
@@ -737,7 +739,7 @@ The invited user, on start, gets a percentage of the reputation of the inviting 
 
 Referrals can both help or hurt the inviting user: if the invitee recommends themselves as a trustworthy member of the community, they get reputation increase, and the inviter gets a proportional amount of that reputation for themselves; vice versa, reputation loss is propagated as well.
 
-## Guarantors
+### Guarantors
 
 **P2P Guarantor** – a community member with a sufficiently high reputation who can guarantee the quality of interactions with another community member - new or with little reputation - in exchange for a share of the profits.
 
@@ -761,11 +763,11 @@ Let's take the basic scenario as an example.
 1. B asks A to act as his guarantor, and A agrees.
 2. A with the UI calls the method in R: R.guarantee()
 
-# Reputation sustainability
+## Reputation sustainability
 
-## Handling abnormal scores
+### Handling abnormal scores
 
-### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
+#### A client is offended by life and gives the worker a minimal rate. Dispute is not open.
 
 If the worker receives a low score, it is quarantined. This is a mode of the score in which it is not displayed and is not accounted in the worker's overall rating (displayed by UI).
 
@@ -801,7 +803,7 @@ If the dispute is resolved in favor of A, the score is discarded.
 
 If the argument is in favor of B, A's low grade is counted instantly. Observation mode is terminated.
 
-### The user gives the performer a 1 for non-good reason. Dispute is open
+#### The user gives the performer a 1 for non-good reason. Dispute is open
 
 The user gives the performer a low score and opens a dispute.
 
@@ -811,17 +813,17 @@ Then there are three options for the development of events:
 - the dispute is resolved in the side of the performer. The score is not counted in the reputation, or a high score is given (by the arbitrator's decision)
 - the parties go to a settlement - we believe that the reputation of the performer and the customer does not suffer - both get A's (it is advantageous to go to a settlement)
 
-### The contractor deliberately fails to complete the order. Dispute Resolution.
+#### The contractor deliberately fails to complete the order. Dispute Resolution.
 
 If the contractor openly walks away from the order, the arbitrator recognizes the dispute in favor of the customer. The contractor is given a low reputation score.
 
 The contractor cannot take orders during the week.
 
-### The performer has gone bad in life. Started to forget about everything. Depression.
+#### The performer has gone bad in life. Started to forget about everything. Depression.
 
 In such a scenario, the reputation of the user tends to 0. Other users see the low reputation and do not accept the risk. The only way to fix reputation is to take on "cheap" orders, where customers are willing to take a risk and work with an unreliable performer.
 
-###  The ratio of the value of the order to the reputation received.
+####  The ratio of the value of the order to the reputation received.
 
 Very important is the ratio of the cost of the order to the reputation that the contractor gets. The idea is that the higher the cost of the order, the higher the risk for non-performance. A high risk should lead to a high reward.
 
@@ -835,32 +837,32 @@ The highest league, where the user is offered expensive orders. For the executio
 
 The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
 
-# Rates, Attributive rates
+## Rates, Attributive rates
 
 <span style="color:red">
 	🔥 (bits in overview)
 </span>
 
-## Labels, industries, categories
+### Labels, industries, categories
 TODO
 <span style="color:red">
 	no information
 </span>
 
-## Reputation as multiple rates
+### Reputation as multiple rates
 IN PROGRESS....
 
 <span style="color:red">
 	TODO💤 soft skills, contributing to the community, hard skills, badges, numbers,
 </span>
 
-## Reputation use cases
+### Reputation use cases
 IN PROGRESS....
 <span style="color:red">
 	TODO💤
 </span>
 
-## Types and systems of rates 
+### Types and systems of rates 
 
 <span style="color:red">
 	todo: review, translate, UPDATE(Kirill)💤
@@ -938,7 +940,7 @@ The worst = 0
 
 **Function to change the grade. The contractor is unhappy with the grade and can first negotiate directly with the customer to correct it. If this does not work, a third party is involved.**
 
-# P2P crowdsourcing
+## P2P crowdsourcing
 
 Crowdsourcing involves obtaining work, information, or opinions from a large group of people. Our focus is to use crowdsourcing for verification and dispute resolution. Both flows imply two roles: initiator - a person requesting a verification or dispute resolution and guarantors - one or multiple community members having required qualifications.
 
@@ -946,19 +948,19 @@ The reputation provider offers tokens and/or reputation for community members wi
 
 Important: under the hood, we are dealing with keys. Key-Person match is an extra topic and it is out of the scope of this document.
 
-## Verification
+### Verification
 
 Verification is the process of establishing the truth, accuracy, or validity of something. For example - both apostilles and certifications are used by foreign governments to assess the authenticity of an official signature on a document.
 
 Big industries or a growing startup trying to take over the market require digital identity verification to connect customers to whatever they need.
 
-### Verification in the non community driven real world
+#### Verification in the non community driven real world
 
 Using online services ofter requires validation/verification. For example, using exchanges like Binance requires providing documents confirming the identity. Multiple hosting companies require to send documents for account activation. Several companies have integrated even more strict verification using video calls. There are multiple identity verification services on the market. iDenfy https://www.idenfy.com/ is one of them used for ID Document Verification, Face Recognition with 3D Liveness Detection, and is fully AML compliant. iDenfy and similar services protect companies from identity fraud.
 
 Another common real-world example of verification is issuing a 'certificate'. For example, a university confirms the knowledge in a specific domain by issuing an official document.
 
-### How does it work in the community driven systems.
+#### How does it work in the community driven systems.
 
 The difference from the existing solutions is to crowdsource guarantors for the verification process instead of having paid staff responsible for verification.
 
@@ -972,17 +974,17 @@ A general overview of the verification is as follows:
 
 initiator -> signed verification request -> pool of verification requests -> verificator(s) select a request -> verificaion -> initiator's attribute is verified/not verified using
 
-### Use cases
+#### Use cases
 
-#### Age verification
+##### Age verification
 
 An online service filters access to the content based on age. A common approach to verify the age is to provide documents containing the date of birth. Verificators check the documents during an online call and the initiator gets verified by getting a token (SoulBound Tokens - The Non-Transferable NFTs) which acts like an apostille or certification. It's essential that the token is non-transferrable.
 
-#### Knowledge or skills verification
+##### Knowledge or skills verification
 
 Having a community in mind where one offers knowledge to another it's essential for a service provider to have some reputation (to have some kind of certificate). For example, a web designer should have some experience with html/css/js. The result of verification is a token (SoulBound Tokens - The Non-Transferable NFTs) which acts like a certification. It's essential that the token is non-transferrable.
 
-### Domains and validation logic
+#### Domains and validation logic
 
 There are two main domain groups based on the essence of what should be verified.
 
@@ -1025,7 +1027,7 @@ Validator 3: 6
 Average: 6
 Final decision: yes / 6
 
-### How to verify technically
+#### How to verify technically
 
 Based on domain:
 
@@ -1035,7 +1037,7 @@ Based on domain:
 
 For predefined verification flows verificators follow the validator provider's way to verify. If there is no predefined flow a verificator is free to use their own flow to verify.
 
-### Verificator's profit
+#### Verificator's profit
 
 Verificators are paid in two ways (settable): increased reputation, and/or regular tokens.
 
@@ -1050,22 +1052,22 @@ Regular tokens reward is self-explanatory.
 
 As a result, a validation provider should always have some active verificators.
 
-### Conflict resolution
+#### Conflict resolution
 
 If an initiator does not agree with the result there is a way to open a dispute resolution. Possible solutions are:
 
 - a new verification made by another group of verificators
 - a new verification with a bigger number of verificators to make subjective opinions more objective.
 
-### Bad verificators
+#### Bad verificators
 
 Under 'bad' we mean a verificator whose decision almost always doesn't match the end result. In this case, the reputation of the verificator should be decreased to avoid misuse of the verificator's right. Another solution is to limit temporary access to the verification pool by hitting some threshold (settable value).
 
-### How to become a verificator. Cold start.
+#### How to become a verificator. Cold start.
 
 The main requirement to a verificator is a dufficient reputation in the specific domain. It automatically implies that a verificator should be verified firstly thus there should be some 'cold start' verificators at start time. This could be a settable value (list) by reputation service provider.
 
-### General implementation details
+#### General implementation details
 
 The initializer places a signed request as proof of the kay ownership. The request contains at least:
 
@@ -1084,11 +1086,11 @@ An initializer gets a Non-Transferable token.
 
 Verificatoes gets reputation and/or regular tokens.
 
-### How an external service uses a reputation service provider
+#### How an external service uses a reputation service provider
 
 A service should be able request the desired information in form of: "is the owner of the key under 18"?
 
-## Dispute resolution
+### Dispute resolution
 
 In general a dispute resolution is the process of resolving a dispute or conflict between different parties. Crucially, dispute resolution can be a way of solving a conflict without having to go to court. 
 
@@ -1109,7 +1111,7 @@ Dispute resolution is not suitable for:
 - the outcome needs to be legally binding
 - the other party is unwilling to take part in dispute resolution
 
-### Dispute resolution logic
+#### Dispute resolution logic
 
 Using a common communications ways like
 
@@ -1119,35 +1121,35 @@ Using a common communications ways like
 
 a resolver should take in consideration meaning two parts of a dispute. To avoid any conflicts it's better do make two independent calls. Based on the information a resolver tries to solve a dispute. The goal is not to decide who is right but to find a suitable solution for both parts.
 
-### Duspute resolution between community members
+#### Duspute resolution between community members
 
 In a community it's hard to 'hold' payment for a service, if payment is already performed. The real instrument to enforce better communication is reputation. Thus if part 1 offered some services to part 2 and part 2 won't pay we don't really have an intrument to enforce the payment.
 
 What we can do is adjusting reputation in case of conflicts.
 
-#### Form of resolution
+##### Form of resolution
 
 Locked balance is unlocked for specific part.
 
-### Dispute resulution between comunity member and a service provider
+#### Dispute resulution between comunity member and a service provider
 
 
-#### Form of resolution
+##### Form of resolution
 
 Example: A commutiony memner doesn't agree with validation of his EN writing skills. (negative outcome)
 
 Final decision to confirm or not to confirm EN writing skills.
 
-## Court system
+### Court system
 
-### Overview of the court system (judiciary) 
+#### Overview of the court system (judiciary) 
 
 Nowadays, more and more traditional processes are moving online. 
 Probably a small number of non-digitized processes remain. With the advent of blockchain technology, we can be 100% sure of the existence of certain events in time, which is supported by irrefutable evidence stored in a distributed ledger. 
 
 Proof-of-stake technologies, which have gained popularity, can significantly reduce the cost of recording and storing blocks in the chain, making the technology available for mass implementation in wide areas of life. One area we want to address is dispute resolution. Why don't people stop arguing? If we consider a person as a class, we will see that a class has a certain set of biological, social, psychological and many other properties. Each instance of the class, that is, each person, has individual values for these properties, and these values are constantly mutating in time, in interaction with other people, means of obtaining information, and many more conditions. Therefore, people's views on the same things, events or processes can be objectively radically different. There is another aspect of human nature that is important for us - this is the human Ego and one of its main manifestations - the Ego absolutely needs to be right and prove his case by any available means and at any cost, even at the highest cost - with his life.
 
-### What we have to do?
+#### What we have to do?
 
 If it is impossible to agree, the parties can choose a system for resolving their dispute, which they will trust. In this case, the verdict issued by the judicial system will be accepted by the Ego with minimal criticism. 
 
@@ -1159,7 +1161,7 @@ Important triggers of system trust:
 - Transparency of all processes.
 - Minimizing human error in decision making.
 
-### The Role of the Judge
+#### The Role of the Judge
 
 Members of the community who meet the following criteria will be accepted as judges:
 
@@ -1169,7 +1171,7 @@ Members of the community who meet the following criteria will be accepted as jud
 
 In the future, it is possible to introduce the institution of judging, in which at first the participant becomes an applicant, solves legal cases in parallel and gains points in order to become a judge.
 
-### Decision-making mechanism
+#### Decision-making mechanism
 
 The judge receives a request that the system has randomly selected him as a judge. The judge accepts the request and the case materials become available to him. The claim of one of the parties and the arguments of the other party, the evidence of each of the parties is also available, including the testimony of witnesses registered in the system.
 
@@ -1177,7 +1179,7 @@ The judge, guided by the norms and laws in force in the community, makes a decis
 
 To minimize the likelihood of human error, the decision is made in parallel by several judges, an odd number. The judges do not see the decisions of other judges on this case.
 
-### Court case flow
+#### Court case flow
 
 1. The participant creates a case, choosing the industry, the subject of the dispute, the amount of the claim, if there is (any):
 2. Describes the situation in detail.
@@ -1194,7 +1196,7 @@ To minimize the likelihood of human error, the decision is made in parallel by s
 13. In case of an identical appeal decision, the decision is automatically approved.
 14. In case of the opposite decision of the appeal, the process is repeated in the third panel of judges. The decision of the third composition is considered final.
 
-### Hierarchy of laws
+#### Hierarchy of laws
  
 - Decisions of judges should not contradict the laws of the community, but only expand its properties without redefining its essence.
 - The community forms laws independently as a pen-source system.
@@ -1202,9 +1204,9 @@ To minimize the likelihood of human error, the decision is made in parallel by s
 - Judicial decisions will not be changed if the laws is changed.
 
 
-# Safety, anti-fraud
+## Safety, anti-fraud
 
-## Protection against artificial sway/attack of lowering the profile?
+### Protection against artificial sway/attack of lowering the profile?
 
 **Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
 
@@ -1214,7 +1216,7 @@ If the user receives an abnormal score (below half of the current average reputa
 
 If the dispute has not been opened by either party, the score is discarded.
 
-## Proof of Commission
+### Proof of Commission
 
 Proof of Commission principle (in P2P reputation systems): in order to earn 1 unit of reputation, you need to spend 1 USD in the form of commission and get a positive score as a result of paid P2P interaction.
 
@@ -1222,25 +1224,25 @@ This principle does not define the recipient of the commission - it can be a com
 
 This principle is necessary to avoid reputation bumping (cheating).
 
-# Tech
+## Tech
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-## Architecture
+### Architecture
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-## Interfaces
+### Interfaces
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-## EIP-2535
+### EIP-2535
 
 <span style="color:red">
 	(Dima, Kirill)
