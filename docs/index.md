@@ -609,12 +609,32 @@ Aa for fees Aragon includes:
 - Stage: Kleros 2.0
 - Network: ETH
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
-TODO
-##### 2.2.4.1. Our differences
+
+
+##### 2.2.4.1. Description
+
+Kleros is an open-source online dispute resolution protocol that uses blockchain and crowdsourcing for fair arbitration of disputes. The Kleros is a general and multipurpose system that can be used in a wide variety of situations. Some examples of possible applications include:
+
+- Escrow
+- Micro tasking
+- Insurance
+- Oracle
+- Curated lists
+- Social Networks
+
+Kleros is designed to be a versatile dispute resolution platform and can function as a legal arbitration service. For example social media policy violations include spam prevention and mitigating policy breaches by requiring users to deposit money before the incident begins. Kleros can directly resolve the dispute, or if the context is not clearer, other options that persist like removing content can be specified directly in the smart contract.
+
+Kleros offers justice as a service(JaaS). Other crypto DApps can integrate Kleros to resolve disputes among their users.
+
+Pinakion(PNK) is the native token for Kleros. It is an ERC-20 token that has following use cases:
+
+- Staking: Judges stake PNK tokens to get selected to arbitrate the case. Their stake is slashed in case they do not give the correct judgment.
+- Governance: PNK token holders submit and vote on proposals to upgrade Kleros protocol. Each PNK token gives 1 vote to the holder.
+  
+##### 2.2.4.2. Our differences
 
 - Kleros' value proposition is decentralized arbitration for dispute resolving;
-  our vision is a more general as we consider dispute resolution a part of reputation system.
-  A solution like Kleros might be used as a submodule of our system.
+  our vision is a more general as we consider dispute resolution a part of reputation system. A solution like Kleros might be used as a submodule of our system.
 
 #### 2.2.5. DREP Overview
 
