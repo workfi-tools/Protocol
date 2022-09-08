@@ -29,10 +29,14 @@
 - [7. Safety, anti-fraud](#7-safety-anti-fraud)
   - [7.1. Protection against artificial sway/attack of lowering the profile](#71-protection-against-artificial-swayattack-of-lowering-the-profile)
   - [7.2. Proof of Commission](#72-proof-of-commission)
-- [8. Tech](#8-tech)
-  - [8.1. Architecture](#81-architecture)
-  - [8.2. Interfaces](#82-interfaces)
-  - [8.3. EIP-2535](#83-eip-2535)
+- [8. Community education](#8-community-education)
+  - [8.1. Soft skills](#81-soft-skills)
+  - [8.2. Hard skills](#82-hard-skills)
+  - [8.3. Community engagement](#83-community-engagement)
+- [9. Tech](#9-tech)
+  - [9.1. Architecture](#91-architecture)
+  - [9.2. Interfaces](#92-interfaces)
+  - [9.3. EIP-2535](#93-eip-2535)
 
 <!-- /TOC -->
 
@@ -1244,25 +1248,124 @@ This principle does not define the recipient of the commission - it can be a com
 
 This principle is necessary to avoid reputation bumping (cheating).
 
-## 8. Tech
+## 8. Community education
+
+### 8.1. Soft skills
+
+**User categorization principles within educational part**
+
+- We consider categorizing users by their soft skills level, which means that people with highly developed soft skills within the community interact with people with a related similar soft skills level.
+  * Comment: It makes less sense to categorize users by their level of hard skills within a community, since a company or an individual may need a specialist with both: high and low levels of certain hard skills.
+- We develop the protocol in such a way that people always have opportunities and ways to improve their soft skills. The educational process itself is aimed at improving soft skills and enhancing the entire community quality. Thus, our main goal is not to categorize users, but to motivate them to improve the level of their soft skills.
+  * Comment: This is especially important for users with highly developed hard skills.
+- Ethical problems categorization solutions
+
+<span style="color:green">
+	coming soon...
+</span>
+
+After a certain type of interaction within a service or a platform, users receive feedback on the interaction. 
+
+**Feedback** is delivered in 2 ways: 
+
+- Public feedback is delivered on blockchain.
+- Private feedback is delivered off chain and can be sent via a form in a web App or a service.
+
+Feedback is delivered on particular qualities and internals, which are notionally stated as **problems**.
+
+There are 3 levels of **problems** which we consider as a part of **feedback**:
+
+- **Hard skills** can be defined via feedback within a service or a platform. For instance, if a user presents lower quality of skills than stated, we mark him with a lower position in the service (e.g senior engineer delivers services on the level of a middle or a junior specialist, and we mark him respectively).
+- **Soft skills** are a set of skills, valuable in any type of interactions, and related to a particular area of services presented by a user. Soft skills include respectful communication, time-management, accuracy, etc. 
+- **Community engagement**, which means any P2P transactions and interactions, level of involvement in community processes, feedback to other users, and other certain actions that suit a particular community.
+
+The main purpose of education is to improve the skills of individuals within the entire community, therefore enhancing the quality of communication throughout the community.
+
+If a user presents high hard skills or community contribution, and low soft skills, education is focused on soft skills improvement. This will demand high community contribution and involvement of other users.
+
+Within P2P interactions users can leave **general feedback**, which includes overall experience rating, and **specific feedback** that targets particular skills and qualities of another user.
+
+- In case of **general negative feedback** we strive to improve overall skill set of a user
+- On a **specific negative feedback** we educate a user with targeted skills
+
+To improve communication within the community and to work with specific users on their soft skills, we can involve **Soft skills Managers**.
+
+**Soft skills manager** can be both: an algorithm within a service as well as a person in a community who is responsible for qualitative communication and improving soft skills of other users.
+
+In order to educate and improve soft skills of users, soft skills manager takes the following actions:
+
+- primarily **informs** a user about problems that occur in the process of interaction, which includes defining the problem, suggesting solutions and actions for problem skills improvement and outlining expectations towards specific rating indicators;
+- **verifies that the user is informed**. This can be done via P2P private conversation, direct messages, or tests on a specific topic;
+- **suggests particular actions** and recommendations on improving specific soft skills, possible to implement with metrics, that the user needs to meet in a particular time; 
+- **observes and controls the dynamics** of the metrics, and reacts depending on the dynamics.
+
+With good situation development, the **user reacts positively** to the education process, successfully completes tests and improves his rating in the system.
+
+If **the user reacts negatively** to the feedback provided, his actions within a service may be frozen until he passes certain tests and completes tasks. If these measures don't work, the user may be eliminated from the community.
+
+When educating users we can encounter a number of obstacles that may occur:
+
+- There are users who are not a “teachable fit”, and can not or do not want to be educated or guided towards their soft skills development. In this case such users continue to interact with other users with similar soft skills levels. 
+- Negative feedback can be negatively perceived by users. If a user reacts negatively, and therefore can not or does not want to improve his soft skills level, he continues to interact with other users with similar soft skills levels. 
+- In the case of SCUM we attract specialists for dispute resolution processes to provide solutions and ways to resolve a conflict or a disputable situation. Based on the chosen strategy within the dispute resolution process, users may be advised to take a number of mandatory actions. In case of refusal, users can be eliminated from the community.
+  * In addition, at the protocol level, we have anti-scammers solutions implemented. For example, freezing payments until the results are agreed by the other party.
+
+In the process of education and communication quality improvement, we use a number of approaches and algorithms which serve to enhance the overall quality of the community:
+
+- Provide users with **information and feedback** on their actions, provide articles and supporting materials on a targeted topic, to improve problem areas and rating dynamics.
+- **Connect people with people with the same problems**. For example a user who is predominantly late will be a fair fit to a person with the same soft skill problem, rather than with the one who is always on-time. This approach serves to be both: sustainable and educational.
+- Personal **targeted work with a user**, which includes providing details on the community expectations and increasing user’s motivation to increase specific rating parameters.
+- P2P Mentoring system is a type of more prolonged and targeted P2P work with a particular user to improve user’s skills and rating.
+  
+
+**P2P mentors** are motivated to take part in such community communication and involve in community enhancing due to motivational aspects, which include **financial rewards**, and maintaining and boosting their **reputational metrics**.
+
+<div style="color:green">
+	coming soon...<br>
+  - P2P mentors interactions development<br>
+  -- Criteria and protocols to choose a mentor<br>
+  -- Possible options on mentor sessions parameters
+</div>
+
+**Automation of processes**
+
+Feedback algorithms within a service or a community can be automated by community members’ contribution and operate in the following way:
+
+- After any transaction or interaction users will have an option to leave feedback labels as targeted rates on certain parameters and skills (e.g emojis labeling 🔥😁⏱👹);
+- Basing on users’ feedback we calculate soft skills parameters to collect and sum related data’
+- Basing on the calculated parameters the user is directed towards the most suitable strategy according to his rating;
+- Auto control of further actions and dynamics of user's behavior, which comes with the next action taken within the service.
+### 8.2. Hard skills
+
+<span style="color:green">
+	coming soon...
+</span>
+
+### 8.3. Community engagement
+
+<span style="color:green">
+	coming soon...
+</span>
+
+## 9. Tech
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-### 8.1. Architecture
+### 9.1. Architecture
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-### 8.2. Interfaces
+### 9.2. Interfaces
 
 <span style="color:red">
 	(Dima, Kirill)
 </span>
 
-### 8.3. EIP-2535
+### 9.3. EIP-2535
 
 <span style="color:red">
 	(Dima, Kirill)
