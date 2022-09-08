@@ -130,49 +130,19 @@ Here are some of core principles:
 6. Scam Resistance
 7. Reputation sustainability (f.e. handling of abnormally bad grades)
 
-##### 1.1.3.1. The Macroeconomics of Reputation
-
-###### 1.1.3.1.1. ###### ###### Macroeconomic parameters and mechanics to manage rep system
+#### 1.1.4. The Macroeconomics of Reputation
 
 <span style="color:red">
-	how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
+  Macroeconomic parameters and mechanics to manage rep system, Behaviors to be encouraged, Configurator, Protocol parameters affecting behavior patterns, Client of a new worker will get additional +rep, Community-scoped parameters, What can protocol or communities do by adjusting the parameters, how to check, monitor, rule, manage rep system, what leverages do we have, etc 🔥(bits in overview)
 </span>
 
-###### 1.1.3.1.2. ###### ###### Behaviors to be encouraged
-
-<span style="color:red">
-	TODO: ???
+<span style="color:red">e
+	TODO: Macro parameters: 1. Новые отзывы / оценки, 2. ..reputation diminishing with time (meritocracy vs aristocracy)
 </span>
 
-###### 1.1.3.1.3. ###### ###### Configurator
+#### 1.1.5. Features
 
-<span style="color:red">
-	TODO: ???
-</span>
-
-###### 1.1.3.1.4. ###### ###### Protocol parameters affecting behavior patterns
-
-###### 1.1.3.1.5. ###### ###### Client of a new worker will get additional +rep
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-###### 1.1.3.1.6. ###### ###### Community-scoped parameters
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-###### 1.1.3.1.7. ###### ###### What can protocol or communities do by adjusting the parameters
-
-<span style="color:red">
-	TODO: ???
-</span>
-
-##### 1.1.3.2. Features
-
-###### 1.1.3.2.1. ###### ###### Attributive rates
+##### 1.1.5.1. Attributive rates
 
 The reputation of the performer grows in the industry in which he performs the contract. If you do design, your reputation in design grows, dev grows your reputation in dev, and so on. One performer can have several skills and accordingly several reputations.
 
@@ -200,12 +170,6 @@ Motivations for giving grades can be divided into two notional groups: positive 
 **Cross-Service Reputation** can be implemented like ratings for movies. It is conditionally possible to load reputation from other services and show it as a widget.
 
 For some services, you might consider a grading system in the form of smiley faces. As an example of a reaction on FB.
-
-**Macro parameters:**
-
-<span style="color:red">e
-	TODO: 1. Новые отзывы / оценки, 2. ..reputation diminishing with time (meritocracy vs aristocracy)
-</span>
 
 ### 1.2. Basic reputation representation model and unification problems
 
