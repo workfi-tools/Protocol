@@ -595,7 +595,7 @@ Aa for fees Aragon includes:
 - Subscription Fee:  A subscription fee is imposed on organizations that choose to use the Court as an arbitration provider. 
 - Dispute Fee: Dispute fees are captured at the time a dispute or appeal occurs and are calculated based on a flat amount multiplied by the amount of juror stake selected in the dispute or appeal round.
 
-##### 2.2.3.2. Our differences / similaritues
+##### 2.2.3.2. Our differences / similarities
 
 - We are adopting Aragon's 'Dispute list' which allows to aiew all live disputes or only the ones you are adjudicating. The the list one can explore the details, evidence, and timeline for any dispute.
 - Like Aragon we a dealing with some kind of reward / dispute fee.
