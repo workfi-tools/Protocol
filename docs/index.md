@@ -312,54 +312,155 @@ How to store reputation:
 
 The following is the analysis of existing web2 projects and services managing reputation and p2p communication.
 
+### Amazon
+
+#### Customer Reviews
+
+You can submit reviews for items listed on Amazon. 
+
+Customer Reviews help customers to learn more about the product and decide whether it is the right product for them.
+
+Amazon don't allow anyone to write reviews as a form of promotion.
+
+#### Amazon Verified Purchase Reviews
+
+An "Amazon Verified Purchase" review means that Amazon have verified that the person writing the review purchased or used the product on Amazon, and didn't receive the product at a big discount.
+
+"Amazon Verified Purchase" reviews enable customers to identify reviews that have been left by other customers who have actually purchased or used the product on Amazon.
+
+Reviews that are not marked "Amazon Verified Purchase" are valuable as well.
+
+#### How  Product Star Ratings are Calculated
+
+Amazon calculates a product's star rating using machine-learned models instead of a simple average.
+
+These models take into account factors such as how recent the rating or review is and verified purchase status. They use multiple criteria that establish the authenticity of the feedback. The system continues to learn and improve over time.
+
+Amazon do not consider customer ratings without an Amazon Verified Purchase status in a product's overall star rating until a customer adds more details in the form of text, image, or video
+
+#### Amazon Vine
+
+Amazon Vine is a program that enables a select group of Amazon customers to post opinions about new and pre-release items to help their fellow customers to make educated purchasing decisions.
+
+Customers are invited to become Amazon Vine Voices based on the trust that they have earned in the Amazon community for writing accurate and insightful reviews. 
+
+#### Badges
+
+A badge is a symbol that tells other Amazon customers something interesting about you.
+
+You can earn badges by creating useful content on Amazon. Some badges may be temporary, and some badges may look different, depending on where you see them.
+
+#### **Types of Badges**
+
+There are many different badges. Here is a brief list of our badges and what they mean.
+
+**1 REVIEWER, TOP 10 REVIEWER, TOP 50 REVIEWER, TOP 100 REVIEWER, TOP 500 REVIEWER, TOP 1000 REVIEWER, HALL OF FAME REVIEWER**
+
+These badges identify Amazon best reviewers. T
+
+**TOP CONTRIBUTOR**
+
+This badge is awarded to customers who frequently share reviews or answers related to the Interests that they're most passionate about and that other customers find interesting or helpful.
+
+**AMAZON VERIFIED PROFILE**
+
+This badge indicates that the identity of this contributor has been verified by Amazon.
+
+**THE**
+
+This badge indicates that the person to whom it was granted is "the" celebrity most people associate with that Real Name. 
+
+**AMAZON OFFICIAL**
+
+This is an official Amazon representative. This is a permanent badge.
+
+****AUTHOR, ARTIST, MANUFACTURER**** These badges are given to verified representatives of items listed on Amazon, such as the author, artist, or manufacturer of a product. This is a permanent badge.
+
+#### **Vine Voice**
+
+This customer is a member of Amazon [VineTM Voice](https://www.amazon.com/gp/vine/help), an invitation only program that gives Amazon reviewers advance access to not-yet-released products for the purpose of writing reviews. A review written as part of the Vine™ Voice program always includes this label: "Amazon Vine™ Review" on the initial product detail page and "Customer review from the Amazon Vine™ Program" when viewing the entire review. This is a permanent badge.
+
+#### Contributor Rewards
+
+Contributor Rewards is a program that recognizes Top Contributors who contribute quality content to Spark and the Idea Lists Community.
+
+#### Claim Your Contributor Rewards
+
+Rewards are determined based on the quality of content posted and the amount of customer engagement the content receives.
+
+If you are selected for a reward, you will receive an email that includes the details of your reward amount.
+
+
+### Booking.com
+
+Booking collect reviews once a guest checks out, we send them an email asking them to review their stay with you. They have 90 days to do this.
+
+Guests select an overall score from 1 to 10 to rate their experience at owners property. This is the only question guests are required to answer before they can submit their review. The average of these overall scores becomes owners **Guest Review Score**, which we display once you’ve received your first review.
+
+Booking.com also ask  guests to rate owners property in these six specific areas:
+
+- Cleanliness
+- Comfort
+- Value for money
+- Facilities
+- Location
+- Staff
+
+All of these ratings are optional, and they don’t count towards owners **Guest Review Score.**
+
+Guests can then provide more optional ratings, but these are about different topics for different guests, such as WiFi and breakfast. These also don’t count towards your **Guest Review Score**.
+
+Finally, Booking.com encourage guests to provide open feedback, but this is also optional. 
+
+Since late 2019, the overall score for each review is no longer the average of the ratings the guest gave for each of the specific categories. Instead, guests now give their own score for their overall experience at your property.
+
+This new system has completely replaced the old system, and it applies to properties and guests all over the world. 
+
+Booking.com don’t play any role in deciding owners score themselves. Booking.com only facilitate the process of collecting  reviews from guests. Owners individual scores reflect actual guest experiences and they contribute directly to overall Guest Review Score.
+
+Also Booking.com collect the overall score for each review separately from the ratings guests give for different categories. They do this because the six categories don’t always cover everything that a guest might consider when they rate their stay, while the overall score represents their experience as a whole. This means that it’s normal for the overall score to be different from the category ratings.
+
 ### Habr
 
-#### Карма
+Karma is a tool for self-regulation in the community.
 
-[https://habr.com/ru/docs/help/karma/](https://habr.com/ru/docs/help/karma/)
-
-Карма - это инструмент саморегуляции в комьюнити. 
-
-> … даже написав сотню полезных публикаций … и достигнув показателя кармы в +100500 единиц, можно потерять их все, … разместив лишь один неуместный комментарий.
+> Writing a hundred useful posts and reaching a maximum karma score, you can lose them all by posting just one inappropriate comment.
 > 
 
-❗Примечательно, что пользователь не может ставить другим участникам отрицательную карму, пока сам не наберет 5 очков. Т.о. новички в системе не могут минусить авторов.
+Note that a user can't give negative karma to other members until they reach 5 points. That is, newcomers to the system can't minus authors.
 
-➕ По достижению 50 очков кармы, пользователю дается право наделить чужой аккаунт статусом “полноправный” (расширяет полномочия). Т.о. пользователь А, набрав 50 очков, может сказать, что пользователь Б может “размещать материалы сразу на сайте, без предварительной проверки модераторами”
+➕ After reaching 50 karma points, the user has the right to give someone else's account the status of "full member" (extends the authority). I.e., user A, having accumulated 50 points, can say that user B can "post materials immediately on the site, without prior verification by the moderators"
 
-➖Отрицательная карма приводит к замедлению активности пользователя. Пользователь с кармой [-5; -1] может публиковать 1 коммент за 5 минут. Пользователь с [-30; -11] – раз в день. Высшая мера наказания - перевод в режим ReadOnly.
+Negative karma slows down the user's activity. A user with karma [-5; -1] can post 1 comment in 5 minutes. A user with karma [-30; -11] once a day. The highest punishment is transfer to ReadOnly mode.
 
-🧮 1 единица кармы = 1 голос в сутки, который можно отдать за карму или публикацию, либо 2 голоса за комментарии
+🧮 1 unit of karma = 1 vote per day, which you can give for karma or publication, or 2 votes for comments
 
-На хабре существуют система грейдов. Голоса разных пользователей имеют разный вес: 
+There is a system of grades on Habra. Votes from different users are weighted differently:
 
-> … «Автор», «Старожил» и «Звезда», в случае положительной оценки публикации, добавляют ей +2 пункта рейтинга. А обладатели значка «Легенда» одним голосом добавляют публикации сразу +3 пункта рейтинга.
+> ... "Author", "Old-timer" and "Star", if a publication is positively rated, add +2 rating points to it. Holders of the "Legend" badge add +3 rating points to the publication with one vote.
 > 
 
-> не применяется при голосовании в минус
+> does not apply when voting in minus
 > 
 
-❗Пользователь А может голосовать за карму пользователя В только 1 раз. При этом, он может поменять решение. 
-Кейс (проверил на себе 🙂): у пользователя А карма = 10. Пользователь В может сделать карму = 11 (добавить 1). Затем передумать и сделать карму = 9 (-1 от изначального). Потом передумать снова и сделать все же 11 (+1 от изначального). 
-Но никак не может довести карму до 8 (-2) или 12 (+2)  
+User A can vote for user B's karma only once. In this case, he can change his decision. User A has karma = 10. User B can make karma = 11 (add 1). Then change his mind and make karma = 9 (-1 from the original). Then change his mind again and make it 11 (+1 from the original). But can't get karma to 8 (-2) or 12 (+2).
 
-0️⃣ Один раз, за все время, пользователь может обнулить свою карму. Это может потребоваться, если карма пользователя ушла в глубокий минус. Действительно, очень трудно восстановить карму, если ты в режиме readonly и не можешь ничего писать/комментировать…
-Те, кто голосовали ранее за карму данного пользователя, снова могут голосовать за его карму (в + и в -)
+0️⃣ Once, for all time, the user may reset his karma. This may be required if the user's karma has gone into deep deficit. It's really hard to restore your karma if you're in readonly mode and can't write/comment anything... Those who voted for that user's karma before can vote for their karma again (in + and in -)
 
-#### Рейтинг
+#### Rating
 
-> По сути, рейтинг это параметр, отражающий интерес сообщества к деятельности пользователя на ресурсе.
+> In essence, the rating is a parameter that reflects the community's interest in the user's activity on the resource.
 > 
 
-Рейтинг – это сумма лайков, к постам и комментариям пользователя. 
+Rating is the sum of the likes, to the posts and comments of the user.
 
-Примечательно, что рейтинг может “остывать”: с течением времени, он стремится к нулю. Т.о. в топ хабра попадают наиболее активные участники сообщества – люди, которые регулярно публикуют [годные] посты и комментарии. 
+It is noteworthy that the rating can "cool down": over time, it tends to zero. That is, the most active members of the community - people who regularly publish relevant posts and comments - get to the top of the hubra.
 
 #### RecoveryMode
 
-Это режим, в который попадает пользователь с кармой [-30; -11].
+This is the mode to which a user with karma [-30; -11] gets.
 
-В этом режиме, пользователь может писать 1 пост в неделю – последний шанс насобирать карму и вылезти из “ямы”.
+In this mode, the user can write 1 post a week - the last chance to accumulate karma and get out of the "hole".
 
 ### Yandex
 
