@@ -834,6 +834,7 @@ The highest league, where the user is offered expensive orders. For the executio
 "Premier" league is the lower segment - users with a low reputation get offers at a low cost. It turns out that it takes time and effort to get to the top league.
 
 The benefit is that, with this approach, the reputation is not made up of one expensive project, but of many smaller projects that have been completed.
+
 # Rates, Attributive rates
 
 <span style="color:red">
