@@ -474,7 +474,30 @@ update process. To participate in the mining process, Colony Network Token holde
 - Github: https://github.com/aragon/govern, https://github.com/aragon/aragon-court, ...
 - Networks: Eth (and Rinkeby), Polygon (and Mumbai), Harmony, BSC, Stardust
 - Substrate/Polkadot/Kusama ecosystem availability: may work on EVM parachains (not targeting them)
-TODO
+
+#### Description
+
+The Aragon Network is an Aragon organization that provides infrastructure and services to users of the Aragon platform, and is governed by ANT holders. The existing Aragon infrastructure enables users to create and manage organizations. Each Aragon organization exists as a set of smart contracts that define the organization's stakeholders and their associated rights and privileges.
+
+Aragon offers 'court' and 'govern' systems. The Aragon Court is a decentralized oracle protocol developed and maintained by the Aragon Network. Aragon Court can be used by organizations, including the Aragon Network itself, to resolve subjective disputes with binary outcomes.
+
+Aragon intrudises an advanced Permission Architecture. Aragon organizations control which addresses have access to perform actions on behalf of the organization in a permission registry called the Access Control List.
+
+Governance authority over the Court is granted to ANT holders by way of an Aragon organization. Initially, all votes will last 1 Month, require 50% Support and 1% Minimum Acceptance Quorum. Creating votes requires depositing 1000 ANT into a Proposal Agreement with the following terms:
+
+> Proposals must be made in good faith with the intention to improve the Network's operational efficiency, quality, or breadth of service, and benefit all ANT holders in equal measure.
+
+Aa for fees Aragon includes:
+
+- Subscription Fee:  A subscription fee is imposed on organizations that choose to use the Court as an arbitration provider. 
+- Dispute Fee: Dispute fees are captured at the time a dispute or appeal occurs and are calculated based on a flat amount multiplied by the amount of juror stake selected in the dispute or appeal round.
+
+#### Our differences / similaritues
+
+- We are adopting Aragon's 'Dispute list' which allows to aiew all live disputes or only the ones you are adjudicating. The the list one can explore the details, evidence, and timeline for any dispute.
+- Like Aragon we a dealing with some kind of reward / dispute fee.
+- We don't require to host any tokens for creating votes. In Aragon Governance authority over the Court is granted to ANT holders by way of an Aragon organizatio. Creating votes requires depositing 1000 ANT.
+- Generally our 'dispute resolution' subsystem is a 'side product'. Our main focus is 'reputation'.
 
 ### Kleros Platform Overview
 
