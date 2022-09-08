@@ -27,7 +27,7 @@
   - [6.2. Dispute resolution](#62-dispute-resolution)
   - [6.3. Court system](#63-court-system)
 - [7. Safety, anti-fraud](#7-safety-anti-fraud)
-  - [7.1. Protection against artificial sway/attack of lowering the profile?](#71-protection-against-artificial-swayattack-of-lowering-the-profile)
+  - [7.1. Protection against artificial sway/attack of lowering the profile](#71-protection-against-artificial-swayattack-of-lowering-the-profile)
   - [7.2. Proof of Commission](#72-proof-of-commission)
 - [8. Tech](#8-tech)
   - [8.1. Architecture](#81-architecture)
@@ -1185,7 +1185,7 @@ Probably a small number of non-digitized processes remain. With the advent of bl
 
 Proof-of-stake technologies, which have gained popularity, can significantly reduce the cost of recording and storing blocks in the chain, making the technology available for mass implementation in wide areas of life. One area we want to address is dispute resolution. Why don't people stop arguing? If we consider a person as a class, we will see that a class has a certain set of biological, social, psychological and many other properties. Each instance of the class, that is, each person, has individual values for these properties, and these values are constantly mutating in time, in interaction with other people, means of obtaining information, and many more conditions. Therefore, people's views on the same things, events or processes can be objectively radically different. There is another aspect of human nature that is important for us - this is the human Ego and one of its main manifestations - the Ego absolutely needs to be right and prove his case by any available means and at any cost, even at the highest cost - with his life.
 
-#### 6.3.2. What we have to do?
+#### 6.3.2. What we have to do
 
 If it is impossible to agree, the parties can choose a system for resolving their dispute, which they will trust. In this case, the verdict issued by the judicial system will be accepted by the Ego with minimal criticism. 
 
@@ -1242,7 +1242,7 @@ To minimize the likelihood of human error, the decision is made in parallel by s
 
 ## 7. Safety, anti-fraud
 
-### 7.1. Protection against artificial sway/attack of lowering the profile?
+### 7.1. Protection against artificial sway/attack of lowering the profile
 
 **Case:** 10 users register on the network, create orders for $1 and they are all fulfilled by user X. For this he gets a high score from everyone.
 
