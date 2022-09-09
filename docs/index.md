@@ -183,6 +183,10 @@ For some services, you might consider a grading system in the form of smiley fac
 
 ### 1.3. Reputation model
 
+<span style="color:green">
+  in progress...
+</span>
+
 **Main Terms**
 
 The system consists of agents A1, A2, ..., who interact via transactions T1, T2, ...
