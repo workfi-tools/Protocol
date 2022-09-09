@@ -472,62 +472,54 @@ In this mode, the user can write 1 post a week - the last chance to accumulate k
 
 ##### 2.1.4.1. Рейтинг
 
-Рейтинг = средневзвешенное последних 150 оценок пользователей: чем «свежее» оценка, тем больший у неё вес. 
+Rating = weighted average of the last 150 user ratings: the "fresher" the rating, the greater its weight.
 
-❗Значит, низкую оценку можно “протолкнуть” в конец, выполняя больше заказов.
+❗So, a low grade can be "pushed" to the end by filling more orders.
 
-##### 2.1.4.2. Приоритет
+##### 2.1.4.2. Priority
 
-Этот механизм позволяет определять исполнителя заказа. У кого выше приоритет, тому и предлагается заказ. 
+This mechanism allows you to determine the person who performs the order. Whoever has a higher priority is offered the order. 
 
-Нам это не очень полезно, но могут быть интересные механики.
+##### 2.1.4.3. Activity
 
-##### 2.1.4.3. Активность
+Activity points are awarded for each completed order. And are removed, skipping or canceling an order. If the Activity drops too low, orders will stop coming. 
 
-Баллы Активности начисляются за каждый выполненный заказ. И снимаются, пропуск или отмену заказа. Если Активность упадёт слишком низко, заказы перестанут поступать. 
-
-> Чем дальше находится пассажир или отправитель, тем больше баллов вы получите за принятый заказ. И тем меньше снимется за пропуск.
+> The farther away the passenger or sender is, the more points you get for the accepted order. And the less will be charged for the pass.
 
 
 #### 2.1.5. Elo
 
-Система,  используется для расчета очков в играх на 2х участников. Самое известное применение – шахматы.
+A system used to calculate points in 2-person games. The most famous application is chess.
 
-Идея: если игрок с малым рейтингом выигрывает у более сильного игрока, слабому начисляется много очков. Если сильный игрок выигрывает у слабого, сильный получает мало очков.
+Idea: If a low-ranked player beats a stronger player, the weaker player gets a lot of points. If the stronger player beats the weaker player, the stronger player gets few points.
 
-Переводим на репутацию: если участник с малым рейтингом помогает участнику с большим рейтингом, то получает больше очков. Если участник с большим рейтингом помогает “новичку”, получает немного очков. Оплата производится в любом случае.
+Translate to reputation: If a low-ranked contestant helps a high-ranked contestant, he gets more points. If a contestant with a high rating helps a "newbie", he gets some points. Payment is made in any case.
 
-Также, участник с высоким рейтингом помогает другому участнику с высоким рейтингом – относительно невысокий рост рейтинга.
+Also, a high ranking participant helps another high ranking participant - a relatively low ranking increase.
 
-#### 2.1.6. Профи.ру
+#### 2.1.6. AirBnB
 
-Информации на сайте нет.
+The object of accommodation is evaluated by category + overall score.
 
-Зато есть куча инструкций, как поднять рейтинг на сайте. В основном, все сводится к накрутке через агентства ([https://100review.ru](https://100review.ru/))
+A guest can give a 5 for cleanliness, comfort and location and still give an overall rating of 2.
 
-#### 2.1.7. AirBnB
+##### 2.1.6.1. Ask for confirmation (draw attention to the illogicality of the assessment)
 
-Объекта размещения оценивается по категориям + общая оценка.
+The service retries the user if the final grade is lower than the average for the criteria. In the scenario above, the service should show a warning that the final grade is lower than the category grades. 
 
-Гость может поставить 5 за чистоту, уют и расположение и, при этом, поставить общую оценку 2.
-
-##### 2.1.7.1. Запрашивать подтверждение (обращать внимание на нелогичность оценки)
-
-Сервис переспрашивает пользователя, если итоговая оценка ниже средней за критерии. В сценарии выше, сервис должен показать предупреждение, что итоговая оценка ниже оценок по категориям. 
-
-> … повысились общие оценки, которые гости ставят хозяевам. … число 3-звездочных отзывов снизилось на 2,8%, а 2-зведочных — на 3,9%. Хотя эти цифры могут показаться незначительными, они заметно влияют на точность системы отзывов, и хозяева от этого выигрывают.
+> … the overall ratings given by guests to hosts increased. ... 3-star reviews are down 2.8 percent and 2-star reviews are down 3.9 percent. While these numbers may seem insignificant, they make a noticeable difference in the accuracy of the review system, and hosts benefit from it.
 > 
 
-##### 2.1.7.2. Уточнять, почему именно низкая оценка.
+##### 2.1.6.2. Clarify exactly why the low grade is.
 
-На примере оценки местоположения.
+Using location assessment as an example.
 
-Хозяин жилья не может повлиять на размещение объекта. Оценка размещения субективна. Одному нравится, кто дом на окраине, другому – нет, потому что далеко до исторического центра.
+The property owner has no influence on the placement of the property. Assessment of placement is subjective. One person likes who's house is on the outskirts, another person doesn't like it because it's far from the historic center.
 
-> Если гость ставит за расположение жилья меньше 3 звезд, отображается вопрос: «Местоположение жилья описано неточно?» Благодаря этому оценки по данной категории повысились в среднем на 0,8%.
+> If a guest rates less than 3 stars for a location, the question is displayed: "Is the location of the lodging described inaccurately?" This increased the scores for this category by an average of 0.8%.
 > 
 
-Т.о., когда клиент хочет поставить низкую оценку, сервис уточняет, действительно ли объект *заслужил* такую оценку.
+So, when a client wants to give a low rating, the service asks if the object really *deserves* that rating.
 
 ### 2.2. Web 3
 
