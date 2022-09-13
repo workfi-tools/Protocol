@@ -35,3 +35,8 @@ We are highly motivated to provide a strong basis for the industry, and use this
 - Responsibility for your actions
 - True ownership
 - Educate your community
+
+## Run tests
+```shell
+npx hardhat test
+```

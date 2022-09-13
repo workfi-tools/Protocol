@@ -1,7 +1,16 @@
 {
-  "name": "hardhat-project",
+  "name": "workfi-tools",
+  "version": "0.0.1",
+  "description": "Open source protocols, tools, and solutions for the WorkFi and community or DAO related projects.",
+  "author": "workfi-tools team",
+  "license": "MIT",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "hardhat": "^2.11.1"
+  },
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test"
   }
 }
