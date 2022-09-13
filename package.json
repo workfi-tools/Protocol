@@ -4,6 +4,18 @@
   "description": "Open source protocols, tools, and solutions for the WorkFi and community or DAO related projects.",
   "author": "workfi-tools team",
   "license": "MIT",
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "DAO",
+    "reputation",
+    "outsource",
+    "p2p",
+    "crowdsource",
+    "workfi"
+  ],
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
     "hardhat": "^2.11.1"
