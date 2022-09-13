@@ -474,7 +474,7 @@ In this mode, the user can write 1 post a week - the last chance to accumulate k
 
 #### 2.1.4. Yandex
 
-##### 2.1.4.1. Рейтинг
+##### 2.1.4.1. Rating
 
 Rating = weighted average of the last 150 user ratings: the "fresher" the rating, the greater its weight.
 
@@ -495,11 +495,11 @@ Activity points are awarded for each completed order. And are removed, skipping 
 
 A system used to calculate points in 2-person games. The most famous application is chess.
 
-Idea: If a low-ranked player beats a stronger player, the weaker player gets a lot of points. If the stronger player beats the weaker player, the stronger player gets few points.
+The idea is that if a low-ranked player beats a stronger player, the weaker player gets many points. If the stronger player wins against, the weaker player, the stronger player gets a few points.
 
-Translate to reputation: If a low-ranked contestant helps a high-ranked contestant, he gets more points. If a contestant with a high rating helps a "newbie", he gets some points. Payment is made in any case.
+Translate to reputation: if a low-ranked player helps a higher-ranked player, he gets more points. If a contestant with a high rating helps a "newbie," he gets a few points. Payment is made in any case.
 
-Also, a high ranking participant helps another high ranking participant - a relatively low ranking increase.
+Also, a contestant with a high rating helps another contestant with a high rating - a relatively low rating increase.
 
 #### 2.1.6. AirBnB
 
@@ -567,9 +567,137 @@ user to zero. These leaves are then inserted into the tree.
 All Colony Network Token holders are eligible to become miners and participate in the reputation
 update process. To participate in the mining process, Colony Network Token holders must stake some of their tokens to become 'reputation miners'.
 
+The Colony Network is an Ethereum-based protocol for creating and operating Internet Organizations. In a traditional organization, rules are defined in policy documents and enforced by a management hierarchy; in an Internet Organization, rules are defined in code and enforced by a blockchain mining process.
+
+**The reputation system**
+
+Reputation is a number associated with each user which attempts to capture the value of that user’s
+contributions to the colony over time. Reputation is used to weight a user’s influence in decisions
+related to the expertise they have demonstrated, and to determine amounts owed to a colony’s
+members when rewards are disbursed. Because reputation is awarded to users by either direct or
+indirect peer assessment of their actions, we argue that influence and rewards can be seen as being
+(roughly) distributed by merit. Colony’s aim is that the reputation system will enable an emergent
+and dynamic decision-making hierarchy in which all of the right people are in the right places.
+Colony aims to be broadly meritocratic. Consequently, the majority of decisions in a trustless
+colony are weighted by the relevant reputation. Unlike tokens, reputation cannot be transferred
+between accounts, as it represents an appraisal of the account’s activities by their peers. Reputation must therefore be earned by direct action within the colony.
+
+**Types of reputation**
+
+**Reputation by domain**
+
+Reputation is earned in this hierarchy, and a user has a reputation in all domains that exist — even if that reputation
+is zero. When a user earns or loses reputation in a domain, the reputation in all parent domains
+changes by the same amount. In the case of a user losing reputation, they also lose reputation in
+all child domains, but in this case the child domains lose the same fraction of reputation that was
+lost in the original domain. If a reputation update would result in a user’s reputation being less
+than zero, their reputation is set to zero instead.
+
+**Reputation by skill**
+
+We anticipate domains to mostly be used as an organisational hierarchy within a colony. However,
+this would not necessarily capture the type of work that a user completed to earn their reputation.
+If the domain were a project, with expenditures involving both design and development work,
+reputation earned by completing expenditures related to these skills would not be distinguishable.
+To have a more granular account of the work a user completes to earn their reputation, a skill cloud
+is also maintained.
+This global cloud of skill tags is available to all colonies, and is curated and maintained by the
+Metacolony. When an expenditure is created, as well as being placed in a particular domain in
+the colony, may also be tagged with one or more skills from the skills cloud. When the recipient
+earns reputation by claiming the payout, they will earn reputation in all skills the expenditure was
+tagged with, with the reputation divided uniformly amongst the skills. This is in addition to the
+reputation earned in the relevant domains.
+Even though the skills cloud is universal, specific skills reputation is unique to each colony.
+Earning reputation in a skill in one colony has no effect on the user’s reputation in that skill in any
+other colonies.
+
+**Reputation by colony**
+
+A user’s total reputation in a colony is their reputation in the root domain. This is the reputation
+they will be voting with in any decisions that require input from everyone in a trustless colony (i.e.
+modifying colony-wide parameters). Reputation in a colony has no effect outside the colony. In
+particular, reputations held in one colony have no bearing on reputations held by the same account
+in another colony.
+
+**Earning and losing reputation**
+
+There are three ways to receive reputation in a colony.
+The first is through receiving a payout via an expenditure.
+The second is through the arbitration process.
+The third is upon the creation of a colony and the associated bootstrapping process.
+Reputation losses broadly occur as the result of arbitration, and extension contracts  makes it possible to implement mechanisms which involve reputation penalties (such as tasks
+and disputes). In addition, all reputation earned by users is subject to a continual decay over time.
+
+**Reputation change via expenditures**
+
+Whenever an expenditure recipient receives a payout denominated in the colony’s internal token,
+the recipient also receives some amount of reputation, scaled by that recipient’s payout Scalar. A
+value of 1 gives reputation equivalent to the token payout, but a multiple of up to 2x is possible.
+The reputation is earned in the domain (and all parent domains) of the expenditure, and divided
+equally among any skills associated with that recipient.
+
+**Reputation change as a result of arbitration**
+
+Arbitration permission holders have the ability to emit arbitrary reputation penalties (but not
+increases) in both domains and skills. While this might seem to be a significant power available
+to arbitration permission holders, recall that this permission will in many cases be assigned to
+extension contracts, which will mediate this ability via various mechanisms, such as the motions
+system
+
+**Bootstrapping reputation**
+
+Since a trustless colony’s decision making procedure rests on reputation weighted voting, we are
+presented with a bootstrapping problem for new colonies. When a trustless colony is new, no-one
+has yet completed any work in it and so nobody will have earned any reputation. Consequently,
+no motions can be made and no disputes can be resolved as no-one is able to vote. Then, once the
+first expenditure is paid out, that user has a dictatorship over decisions in the same domains or
+skills until another user earns similar types of reputation.
+To prevent this, when a colony is created, the creator can choose accounts to have initial
+reputation assigned to them in the root domain to allow the colony to bootstrap itself. The
+reputation assigned to each user will be equal to the number of tokens received, i.e. if a member
+receives ten tokens, they also receive ten reputation in the root domain. Given that reputation
+decays over time, this initial bootstrapping will not have an impact on the long-term operation of
+the colony. This is the only time that reputation can be created without an associated expenditure
+being paid out. Users receiving reputation are presumably the colony founder and their colleagues,
+and this starting reputation should be seen as a representation of the existing trust which exists
+within the team.
+
+We note that the same is not required when a new domain is created in a colony. We do not
+wish to allow the creation of new reputation here, as this would devalue reputation already earned
+elsewhere in the colony. This bootstrapping issue is resolved by instead using reputation within the
+parent domain, when a child domain contains less than 10% of the reputation of its parent domain.
+A domain below this threshold cannot have domains created under it.
+
+**Reputation decay**
+
+All reputation decays over time. Every 90 days, 4 a user’s reputation in every domain or skill decays
+by a factor of 2. This decay occurs every 1 hour, rather than being a step change every 90 days
+
+**Revenue and rewards**
+
+A colony may sell goods and services in exchange for Ether or any ERC20-compatible tokens, and
+this revenue may be sent to the colony’s address. Whenever a colony receives such payments, we say
+that the colony has earned revenue. Revenue is distinct from a colony’s working capital: the latter
+is the sum of all tokens held by the colony in various domains, while the former is
+implicitly defined as the colony’s token holdings not yet accounted for in any of the existing pots.
+There is an expectation that some fraction of any Ether or other tokens received by the colony
+are paid out to their members. ‘Members’, in this context, means accounts holding both tokens
+and reputation in the colony. Whenever a colony distributes a portion of revenue to its members,
+we say that the colony is paying out rewards.
+
+**Processing revenue**
+
+Revenue accumulates as the colony receives transfers of tokens. In order to be processed, any user
+can make a special claimColonyFunds transaction, indicating for which token they wish to process
+accumulated revenue.
+The transaction then calculates the amount of token-denominated revenue that has accumulated since the last such transaction, and transfers some proportion to the colony’s rewards pot.
+The remainder is then made available to the colony as working capital. The percentage split is
+configurable by the root permission via the setRewardInverse function.
+
 ##### 2.2.2.2. Our differences
 
 - We have the similar main idea of participation in the reputation update process. But we don't "mine" the reputation. Any Token staking is not required as well.
+- Colony is designed to create organizations, and all payments come to the organization as a whole, which are then redistributed among the participants depending on their reputation. Our reputation system can work both in the organization and in P2P.
 
 #### 2.2.3. Aragon Court & Aragon Govern platform review
 
