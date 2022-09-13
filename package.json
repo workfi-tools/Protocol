@@ -1,8 +1,8 @@
 {
-  "name": "workfi-tools",
+  "name": "WorkFi.tools Protocol",
   "version": "0.0.1",
   "description": "Open source protocols, tools, and solutions for the WorkFi and community or DAO related projects.",
-  "author": "workfi-tools team",
+  "author": "WorkFi.tools team",
   "license": "MIT",
   "keywords": [
     "solidity",
