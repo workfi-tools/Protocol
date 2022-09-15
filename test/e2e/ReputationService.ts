@@ -33,10 +33,8 @@ describe("", function () {
 
     let newbieReputation = await reputationService.getReputation(userNewbieAddress);
     let proReputation = await reputationService.getReputation(userProAddress);
-    expect(newbieReputation).equal(0)
-    expect(proReputation).equal(0)
-    
-    ;
+    expect(newbieReputation).equal(0);
+    expect(proReputation).equal(0);
   })
 
   it("newbie gets advice from pro", async () => {

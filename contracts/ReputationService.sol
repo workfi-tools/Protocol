@@ -5,33 +5,36 @@
     import "@openzeppelin/contracts/access/Ownable.sol";
     import "./IReputationService.sol";
 
-    contract ReputationService is IReputationService {
+    contract ReputationService is IReputationService, Ownable {
         mapping (address => bool) registered;
-        mapping (address => uint) ratings;
         mapping (address => address[]) raters;
-     
+      
+        /**
+        * @notice global storage of reputation per address. 
+        */
+        mapping (address => uint) reputationStorage;
  
-        function register(address user) external override {
+        function register(address user) external {
             if(!registered[user]){
-                ratings[user]=0;
+                reputationStorage[user]=0;
             }
         }
        
         function ban(address user) external override {}
 
-        function mint(address user, uint points) external override returns (uint) {
+        function mint(address user, uint points) external returns (uint) {
             require(points > 0, "Only positive");
 
-            ratings[user] = points;
+            reputationStorage[user] = points;
             raters[user].push(msg.sender);
-            return ratings[user];
+            return reputationStorage[user];
         }
       
-        function burn(address user, uint points) external override returns (uint){}
+        function burn(address user, uint points) external returns (uint){}
 
-        function getReputation(address user) external override view returns (uint){}
+        function getReputation(address user) external view returns (uint){}
 
-        function getRaters(address _for) external override view returns (address[] memory){
+        function getRaters(address _for) external view returns (address[] memory){
             return raters[_for];
         }
        

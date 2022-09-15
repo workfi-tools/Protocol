@@ -30,10 +30,10 @@
 
         enum TransactionState{
             ON_REVIEW,
-            REQUEST_PUBLISHED, // 1е сообщение
-            REJECTED, // ответный дизлайк
-            INTERACTING, // 1й ответ
-            FINALIZED // заблочила 
+            REQUEST_PUBLISHED,
+            REJECTED,
+            INTERACTING,
+            FINALIZED
         }
 
         struct Confirmation {
