@@ -1,7 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-contract ConfigConstants {     
+contract ConfigConstants {    
+
+    
+        bool approvable = true;
+    
+
     /**
     * @dev time to dispute auto closing 
     */
