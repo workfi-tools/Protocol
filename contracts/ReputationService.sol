@@ -3,52 +3,22 @@
 
     import "hardhat/console.sol";
     import "@openzeppelin/contracts/access/Ownable.sol";
+    import "./IReputationService.sol";
 
-    abstract contract ReputationService is Ownable {
-        /**
-        * @notice global storage of reputation per address. 
-        */
-        mapping (address => uint) reputationStorage;
+    contract ReputationService is IReputationService {
+     
+ 
+        function register(address user) external override {}
+       
+        function ban(address user) external override {}
 
-        /** 
-        * @notice adding address to the reputation system. 
-        * @param user The address to be added to the system
-        */
-        function register(address user) external virtual;
+        function mint(address user, uint points) external override returns (uint) {}
+      
+        function burn(address user, uint points) external override returns (uint){}
 
-        /**  
-        * @notice blocks given address. 
-        * @param user The address to be block in the system
-        */
-        function ban(address user) external virtual;
+        function getReputation(address user) external override view returns (uint){}
 
-        /**
-         * @notice increasing reputation for a giving address.
-         * @param user The address whose reputation will be increased
-         * @param points Points of reputation will be added to current address reputation
-         * @return balance The amount reputation points
-        */
-        function mint(address user, uint points) external virtual returns (uint);
+        function getRaters(address _for) external override view returns (address[] memory){}
+       
 
-        /**
-         * @notice decreasing reputation for a giving address.
-         * @param user The address whose reputation will be decreased
-         * @param points Points of reputation will be substructed from current address reputation
-         * @return balance The amount reputation points
-        */
-        function burn(address user, uint points) external virtual returns (uint);
-
-        /**
-         * @notice return reputation amount for a giving address.
-         * @param user The address whose balance requested
-         * @return balance The amount reputation points
-        */
-        function getReputation(address user) external virtual view returns (uint);
-
-        /**
-         * @notice returns list of addresses who rated current adress
-         * @param _for addres who was rated
-         * @return raters A list of addresses, who rated 
-        */
-        function getRaters(address _for) external virtual view returns (address[] memory);
     }
