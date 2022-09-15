@@ -6,9 +6,15 @@
     import "./IReputationService.sol";
 
     contract ReputationService is IReputationService {
+        mapping (address => bool) registered;
+        mapping (address => uint) ratings;
      
  
-        function register(address user) external override {}
+        function register(address user) external override {
+            if(!registered[user]){
+                ratings[user]=0;
+            }
+        }
        
         function ban(address user) external override {}
 

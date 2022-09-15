@@ -11,7 +11,7 @@
         mapping (address => uint) reputationStorage;
 
         /** 
-        * @notice adding address to the reputation system. 
+        * @notice adding address to the reputation system if needed. If user was already registered, the function will do nothing 
         * @param user The address to be added to the system
         */
         function register(address user) external virtual;

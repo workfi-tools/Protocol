@@ -3,10 +3,17 @@
 
     import "hardhat/console.sol";
     import "@openzeppelin/contracts/access/Ownable.sol";
+    import "./IReputationService.sol";
 
     contract TransactionService is Ownable{
+        IReputationService reputationService;
+
+        constructor(address reputationServiceAddress){
+            reputationService = IReputationService(reputationServiceAddress);
+        }
+
         // интеракция в сообществе p2p - это вопрос / предложение / лайк профиля
-        
+    
         struct TransactionHeader{
             uint id;
             uint timestamp;
@@ -45,6 +52,8 @@
         uint confirmationsAmount = 0;
 
         function init(bytes32 questionHash) external returns(uint){
+            registerUser(msg.sender);
+
             uint id = generateId(questionHash);
             TransactionHeader memory txHeader = TransactionHeader({
                 id: id,
@@ -96,5 +105,9 @@
         function generateId(bytes32 data) internal view returns(uint){
             bytes32 idBytes = keccak256(abi.encodePacked(data, block.timestamp));
             return uint(idBytes);
+        }
+
+        function registerUser(address userAddress) internal{
+            reputationService.register(userAddress);
         }
 }

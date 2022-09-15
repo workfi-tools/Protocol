@@ -1,7 +1,7 @@
 import { Signer } from 'ethers';
 import { expect } from 'chai';
 import { ethers } from 'hardhat';
-import { TransactionService } from '../../typechain-types/contracts';
+import { ReputationService, TransactionService } from '../../typechain-types/contracts';
 
 describe("", function () {
   let owner: Signer;
@@ -9,6 +9,7 @@ describe("", function () {
   let userPro: Signer; 
   
   let service: TransactionService;
+  let reputationService: ReputationService;
   
   let userNewbieAddress: string;
   let userProAddress: string;
@@ -22,13 +23,25 @@ describe("", function () {
     userNewbieAddress = await userNewbie.getAddress();
     userProAddress = await userPro.getAddress();
 
-    const factory = await ethers.getContractFactory("TransactionService", owner);
-    service = await factory.deploy();
+    const rsFactory = await ethers.getContractFactory("ReputationService", owner);
+    reputationService = await rsFactory.deploy();
+    await reputationService.deployed();
+
+    const tsFactory = await ethers.getContractFactory("TransactionService", owner);
+    service = await tsFactory.deploy(reputationService.address);
     await service.deployed()
+
+    const newbieReputation = await reputationService.getReputation(userNewbieAddress);
+    const proReputation = await reputationService.getReputation(userNewbieAddress);
+    expect(newbieReputation).equal(0)
+    expect(proReputation).equal(0)
+    
     ;
   })
 
   it("newbie gets advice from pro", async () => {
+
+
     // Given: newbie asks question
     const newInteraction = await service.connect(userNewbie).init(QUESTION_HASH);
     await newInteraction.wait();
@@ -80,7 +93,6 @@ describe("", function () {
 
   })
 })
-
 
 // 1 Регистрируем всех пользователей в системе
 // 2 Расставляем роли
