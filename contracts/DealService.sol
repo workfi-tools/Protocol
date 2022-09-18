@@ -7,21 +7,18 @@
 
     contract DealService is Ownable{
         IReputationService reputationService;
-
         // интеракция в сообществе p2p - это вопрос / предложение / лайк профиля
     
-        struct DealHeader{
+        struct Deal {
             uint id;
             uint timestamp;
             address author;
             DealState state;
+            uint confirmationsAmount;
         }
 
-        struct Deal {
-            DealHeader header;
-            uint confirmationsAmount;
-            Confirmation[] confirmationsAsArray;
-        }
+        mapping(uint => Deal) deals;
+        Deal[] dealsList;
 
         enum DealState{
             ON_REVIEW,
@@ -37,39 +34,33 @@
             uint timestamp;
             address author;
         }
-
-        mapping (uint => Deal) deals;
-
-        DealHeader[] dealHeaders;
-        Deal[] dealsList;
         
-        uint dealsAmount = 0;
+        uint openDealsAmount = 0;
         uint confirmationsAmount = 0;
 
         constructor(address reputationServiceAddress){
             reputationService = IReputationService(reputationServiceAddress);
         }
 
-
         function initDeal(bytes32 questionHash) external returns(uint){
             uint id = generateId(questionHash);
-            DealHeader memory dealHeader = DealHeader({
+            Deal memory deal = Deal({
                 id: id,
                 timestamp: block.timestamp,
                 author: msg.sender,
-                state: DealState.ON_REVIEW
+                state: DealState.ON_REVIEW,
+                confirmationsAmount: 0
             });
-
-            dealHeaders.push(dealHeader);
-            deals[dealsAmount].header = dealHeader;
-            dealsAmount++;
+        
+            deals[id] = deal;
+            openDealsAmount++;
+            dealsList.push(deal);
             return id;
         }
-
          
         function approveDeal(uint dealId) external {  
             // config.approvable == true
-            deals[dealId].header.state = DealState.REQUEST_PUBLISHED;
+            deals[dealId].state = DealState.REQUEST_PUBLISHED;
         }
 
         function confirmDeal(uint id, bytes32 answerHash) external {
@@ -82,19 +73,19 @@
             });
 
             deals[id].confirmationsAmount++;
-            deals[id].confirmationsAsArray.push(newConfirmation);
+            //deals[id].confirmationsAsArray.push(newConfirmation);
         }
 
-        function getDeals() external view returns (DealHeader[] memory){
-            return dealHeaders;
+        function getDeals() external view returns (Deal[] memory){
+            return dealsList;
         }
 
-        function getConfirmationsFor(uint dealId) external view returns (Confirmation[] memory){
-            return deals[dealId].confirmationsAsArray;
-        }
+        // function getConfirmationsFor(uint dealId) external view returns (Confirmation[] memory){
+        //     return deals[dealId].confirmationsAsArray;
+        // }
 
         function finalizeDeal(uint dealId) external {
-            deals[dealId].header.state = DealState.FINALIZED;     
+            deals[dealId].state = DealState.FINALIZED;     
         }
 
         function generateId(bytes32 data) internal view returns(uint){

@@ -1,7 +1,8 @@
 import { Signer } from 'ethers';
 import { expect } from 'chai';
-import { ethers } from 'hardhat';
-import { ReputationService, DealService } from '../../typechain-types/contracts';
+import { network, ethers } from 'hardhat';
+import { ReputationService } from '../../typechain-types/contracts';
+import { DealService } from '../../typechain-types/contracts/DealService';
 
 describe("", function () {
   let owner: Signer;
@@ -46,7 +47,6 @@ describe("", function () {
     let txs = await service.getDeals();
     expect(txs.length).equal(1);
     const shouldBeOnReview = txs[0]
-    console.log(shouldBeOnReview);
     
     expect(shouldBeOnReview.author).equal(userNewbieAddress);
     expect(shouldBeOnReview.state).equal(0);
@@ -55,51 +55,53 @@ describe("", function () {
     const approval = await service.approveDeal(shouldBeOnReview.id);
     await approval.wait();
 
+    
+
     // Assert: deal is REQUEST_PUBLISHED 
     txs = await service.getDeals();
     expect(txs.length).equal(1);
     const shouldBePublished = txs[0]
     console.log(shouldBePublished);
-    //expect(shouldBePublished.state).equal(1); //  TODO: why not changing??
+    expect(shouldBePublished.state).equal(1); //  TODO: why not changing??
   
-    // When: pro user reacts to interaction;
-    const confirming = await service.connect(userPro).confirmDeal(shouldBePublished.id, ANSWER_HASH)
-    await confirming.wait();
+    // // When: pro user reacts to interaction;
+    // const confirming = await service.connect(userPro).confirmDeal(shouldBePublished.id, ANSWER_HASH)
+    // await confirming.wait();
 
-    // Assert: deal is INTERACTING 
-    txs = await service.getDeals();
-    const shouldBeInteracting = txs[0]
-    expect(shouldBeInteracting.author).equal(userNewbieAddress);
-    //  expect(shouldBeInteracting.state).equal(3); //  TODO: why not changing??
+    // // Assert: deal is INTERACTING 
+    // txs = await service.getDeals();
+    // const shouldBeInteracting = txs[0]
+    // expect(shouldBeInteracting.author).equal(userNewbieAddress);
+    // //  expect(shouldBeInteracting.state).equal(3); //  TODO: why not changing??
 
-    // Then: system registeras confirmation
-    let confirmations = await service.getConfirmationsFor(shouldBeInteracting.id);
-    expect(confirmations.length).equal(1);
-    const prosConfirmation = confirmations[0];
-    expect(prosConfirmation.author).equal(userProAddress);
-    expect(prosConfirmation.dealId).equal(shouldBeInteracting.id);
+    // // Then: system registeras confirmation
+    // let confirmations = await service.getConfirmationsFor(shouldBeInteracting.id);
+    // expect(confirmations.length).equal(1);
+    // const prosConfirmation = confirmations[0];
+    // expect(prosConfirmation.author).equal(userProAddress);
+    // expect(prosConfirmation.dealId).equal(shouldBeInteracting.id);
      
-    // When: newbie marks answer as a solution
-    let finilizing = await service.connect(userNewbie).finalizeDeal(shouldBeInteracting.id);
-    await finilizing.wait();
+    // // When: newbie marks answer as a solution
+    // let finilizing = await service.connect(userNewbie).finalizeDeal(shouldBeInteracting.id);
+    // await finilizing.wait();
 
-    // Assert: deal is FINALIZED
-    txs = await service.getDeals();
-    const shouldBeFinalized = txs[0]
-    expect(shouldBeFinalized.author).equal(userNewbieAddress);
-    //  expect(shouldBeInteracting.state).equal(4); //  TODO: why not changing??
+    // // Assert: deal is FINALIZED
+    // txs = await service.getDeals();
+    // const shouldBeFinalized = txs[0]
+    // expect(shouldBeFinalized.author).equal(userNewbieAddress);
+    // //  expect(shouldBeInteracting.state).equal(4); //  TODO: why not changing??
     
-    // Then: newbie can rate pro now
-    const minting = await reputationService.connect(userNewbie).mint(userProAddress, REPUTATION_REWARD);
-    await minting.wait()
+    // // Then: newbie can rate pro now
+    // const minting = await reputationService.connect(userNewbie).mint(userProAddress, REPUTATION_REWARD);
+    // await minting.wait()
 
-    // Assert: pro's reputation is increased
-    let proReputation = await reputationService.getReputation(userProAddress);
-    console.log(proReputation);
-    //expect(proReputation).equal(REPUTATION_REWARD);
+    // // Assert: pro's reputation is increased
+    // let proReputation = await reputationService.getReputation(userProAddress);
+    // console.log(proReputation);
+    // //expect(proReputation).equal(REPUTATION_REWARD);
 
-    let raters = await reputationService.getRaters(userProAddress);
-    expect(raters[0]).equal(userNewbieAddress);
+    // let raters = await reputationService.getRaters(userProAddress);
+    // expect(raters[0]).equal(userNewbieAddress);
   })
 })
 
