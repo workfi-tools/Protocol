@@ -50,6 +50,8 @@ The core idea behind our solutions is the reputation system.
 
 On top of this we are in process of designing the following additional systems:
 
+**Certification** – certificates as non-transferable tokens issued by certification centers or P2P that proves something (education, age, facts, achievements, subjective opinions, KYC, knowledge level, etc)
+
 **Web3 token access** - Availability of different features depending on the user's reputation rating*
 
 **Voting** - System of different types of voting using agent modeling and voting to satisfy community members and perform community development by creating a library of solutions for voting.
