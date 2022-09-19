@@ -15,9 +15,10 @@
         mapping (address => uint) reputationStorage;
  
         function register(address user) external {
-            require(registered[user] == false, "User already registered");
-              
+            require(!registered[user], "User already registered");
+             
             reputationStorage[user]=0;
+            registered[user] = true;
         }
 
         function mint(address user, uint points) external returns (uint) {
@@ -29,6 +30,8 @@
         }
 
         function getReputation(address user) external view returns (uint){
+            require(registered[user], "No such user");
+
             return reputationStorage[user];
         }
 

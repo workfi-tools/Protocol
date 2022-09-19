@@ -7,8 +7,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 abstract contract VerificationService is Ownable {
 
-
-
     /**
     * @notice creates a new request for vrification in specified domain
     * @param domain name of domain

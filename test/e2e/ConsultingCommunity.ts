@@ -4,7 +4,9 @@ import { ethers } from 'hardhat';
 import { ReputationService } from '../../typechain-types/contracts';
 import { DealService } from '../../typechain-types/contracts/DealService';
 
-describe("", function () {
+describe(`
+  Scenarios with a consulting community. 
+  Users help each others: answering questions, completing tasks and so on`, function () {
   let owner: Signer;
   let userNewbie: Signer; 
   let userPro: Signer; 
