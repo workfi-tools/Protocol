@@ -19,8 +19,6 @@
               
             reputationStorage[user]=0;
         }
-       
-        function ban(address user) external override {}
 
         function mint(address user, uint points) external returns (uint) {
             require(points > 0, "Only positive");
@@ -29,8 +27,6 @@
             raters[user].push(msg.sender);
             return reputationStorage[user];
         }
-      
-        function burn(address user, uint points) external returns (uint){}
 
         function getReputation(address user) external view returns (uint){
             return reputationStorage[user];
@@ -39,6 +35,10 @@
         function getRaters(address _for) external view returns (address[] memory){
             return raters[_for];
         }
-       
+      
+        function burn(address user, uint points) external returns (uint){}
+
+        function ban(address user) external override {}
+
 
     }

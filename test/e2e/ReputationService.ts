@@ -16,7 +16,9 @@ describe("", function () {
   let userProAddress: string;
 
   const QUESTION_HASH = ethers.utils.hexZeroPad("0x1234", 32);
+  const TASK_HASH = ethers.utils.hexZeroPad("0x4321", 32);
   const ANSWER_HASH = ethers.utils.hexZeroPad("0x4567", 32);
+  const SOLUTION_HASH = ethers.utils.hexZeroPad("0x7654", 32);
   const REPUTATION_REWARD = 100;
   
   beforeEach("Before each", async () => {
@@ -84,6 +86,50 @@ describe("", function () {
     
   })
 
+  it("pro gives simple tasks to newbie",async () => {
+     // Given: pro place task to do
+     const newInteraction = await service.connect(userPro).initDeal(TASK_HASH);
+     await newInteraction.wait();
+     let ids = await service.getDeals();
+     const dealId: BigNumber = ids[0];
+     
+     // Assert: deal is ON_REVIEW 
+     await assertDealObjectState(dealId, 0, userProAddress);
+ 
+     // And: Admin contract publish the task;
+     const approval = await service.approveDeal(dealId);
+     await approval.wait();
+ 
+     //Assert: deal is REQUEST_PUBLISHED 
+     await assertDealObjectState(dealId, 1, userProAddress);
+       
+     //When: newbie publish their solution;
+     const confirming = await service.connect(userNewbie).confirmDeal(dealId, SOLUTION_HASH)
+     await confirming.wait();
+ 
+     // Assert: deal is INTERACTING 
+     await assertDealObjectState(dealId, 3, userProAddress);
+     
+     //Assert: system registers confirmation
+     await assertConfirmationObjectState(dealId, userNewbieAddress);
+      
+     // When: pro marks solution as accepted
+     let finilizing = await service.connect(userPro).finalizeDeal(dealId);
+     await finilizing.wait();
+ 
+     // Assert: deal is FINALIZED
+     await assertDealObjectState(dealId, 4, userProAddress);
+ 
+     // Then: pro can rate newbie now
+     const minting = await reputationService.connect(userPro).mint(userNewbieAddress, REPUTATION_REWARD);
+     await minting.wait()
+ 
+     // Assert: pro's reputation is increased
+     await assertUserGetsReputationFromUser(userNewbieAddress, userProAddress, REPUTATION_REWARD);
+     
+    
+  })
+
   async function assertDealObjectState(id: BigNumber, stateNum: number, addressUser: string) {
     let ids = await service.getDeals();
     expect(ids.length).equal(1);
@@ -112,13 +158,3 @@ describe("", function () {
       expect(raters[0]).equal(userFrom);
   }
 })
-
-
-
-// 1 Регистрируем всех пользователей в системе
-// 2 Расставляем роли
-// 3 Позитивные Юзкейсы:
-    //новичок консультируется с про
-    //про аутсорсит рутину новичку
-  
-
