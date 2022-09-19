@@ -15,9 +15,9 @@
         mapping (address => uint) reputationStorage;
  
         function register(address user) external {
-            if(!registered[user]){
-                reputationStorage[user]=0;
-            }
+            require(registered[user] == false, "User already registered");
+              
+            reputationStorage[user]=0;
         }
        
         function ban(address user) external override {}
@@ -32,7 +32,9 @@
       
         function burn(address user, uint points) external returns (uint){}
 
-        function getReputation(address user) external view returns (uint){}
+        function getReputation(address user) external view returns (uint){
+            return reputationStorage[user];
+        }
 
         function getRaters(address _for) external view returns (address[] memory){
             return raters[_for];

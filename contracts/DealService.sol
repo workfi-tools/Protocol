@@ -17,8 +17,6 @@
             uint confirmationsAmount;
         }
 
-        mapping(uint => Deal) deals;
-        Deal[] dealsList;
 
         enum DealState{
             ON_REVIEW,
@@ -29,14 +27,18 @@
         }
 
         struct Confirmation {
-            uint id;
+            uint confirmationId;
             uint dealId;
             uint timestamp;
             address author;
         }
-        
+  
+        uint[] dealIds;
         uint openDealsAmount = 0;
-        uint confirmationsAmount = 0;
+
+        mapping(uint => Deal) deals;
+        mapping(uint => Confirmation) confirmations;
+        mapping(uint => Confirmation[]) confirmationsPerDeal;
 
         constructor(address reputationServiceAddress){
             reputationService = IReputationService(reputationServiceAddress);
@@ -53,8 +55,8 @@
             });
         
             deals[id] = deal;
+            dealIds.push(id);
             openDealsAmount++;
-            dealsList.push(deal);
             return id;
         }
          
@@ -63,26 +65,34 @@
             deals[dealId].state = DealState.REQUEST_PUBLISHED;
         }
 
-        function confirmDeal(uint id, bytes32 answerHash) external {
+        function confirmDeal(uint dealId, bytes32 answerHash) external returns (uint){
             uint newId = generateId(answerHash);
             Confirmation memory newConfirmation = Confirmation({
-                id: newId,
-                dealId: id,
+                confirmationId: newId,
+                dealId: dealId,
                 timestamp:block.timestamp,
                 author:msg.sender
             });
 
-            deals[id].confirmationsAmount++;
-            //deals[id].confirmationsAsArray.push(newConfirmation);
+            confirmations[newId] = newConfirmation;
+            confirmationsPerDeal[dealId].push(newConfirmation);
+            deals[dealId].confirmationsAmount++;
+            deals[dealId].state = DealState.INTERACTING;
+
+            return newId;
         }
 
-        function getDeals() external view returns (Deal[] memory){
-            return dealsList;
+        function getDealById(uint dealId) external view returns(Deal memory){
+            return deals[dealId];
         }
 
-        // function getConfirmationsFor(uint dealId) external view returns (Confirmation[] memory){
-        //     return deals[dealId].confirmationsAsArray;
-        // }
+        function getDeals() external view returns (uint[] memory) {
+            return dealIds;
+        }
+
+        function getConfirmationsFor(uint dealId) external view returns (Confirmation[] memory){
+            return confirmationsPerDeal[dealId];
+        }
 
         function finalizeDeal(uint dealId) external {
             deals[dealId].state = DealState.FINALIZED;     
@@ -93,7 +103,4 @@
             return uint(idBytes);
         }
 
-        function registerUser(address userAddress) internal{
-            reputationService.register(userAddress);
-        }
 }
