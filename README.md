@@ -9,7 +9,7 @@ Open source protocols, tools, and solutions for the WorkFi and community or DAO 
 - **WorkFi**
   * Idustry that includes web3-powered services and products that organizes work in companies, among individual entrepreneurs and freelancers
 - **Reputation system**
-  * System of highly configurable reputation system as a core and different services that relies on it
+  * A highly configurable reputation system as a core and different services that relies on it
 
 ## Mission
 
