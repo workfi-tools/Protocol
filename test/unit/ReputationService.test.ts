@@ -76,8 +76,25 @@ describe("Reputation service unit test", function () {
         ).to.be.revertedWith('Only positive'); 
       })
     
-
   })
 
-  
+  describe("`getReputation` method",async () => {
+    beforeEach("Register users", async () => {
+        const regiserTx1 = await service.register(user1.getAddress());
+        await regiserTx1.wait();
+    })
+
+      it("should be possible to get reputation for registered user (equals 0)", async () => {
+        const reputation = await service.getReputation(user1.getAddress())
+        expect(reputation).equal(0)
+      })
+
+      it("should not be possible to get reputation for non-registered user", async () => {
+        await expect(
+          service.getReputation(user2.getAddress()))
+          .to.be.revertedWith('No such user'); 
+      })
+  })
+
+
 })

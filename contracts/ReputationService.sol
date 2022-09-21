@@ -13,6 +13,11 @@
         * @notice global storage of reputation per address. 
         */
         mapping (address => uint) reputationStorage;
+
+        modifier registeredOnly(address user) {
+            require(registered[user], "No such user");
+            _;
+        }
  
         function register(address user) external {
             require(!registered[user], "User already registered");
@@ -29,14 +34,12 @@
             return reputationStorage[user];
         }
 
-        function getReputation(address user) external view returns (uint){
-            require(registered[user], "No such user");
-
+        function getReputation(address user) external view registeredOnly(user) returns (uint){
             return reputationStorage[user];
         }
 
-        function getRaters(address _for) external view returns (address[] memory){
-            return raters[_for];
+        function getRaters(address user) external view  registeredOnly(user) returns (address[] memory){
+            return raters[user];
         }
       
         function burn(address user, uint points) external returns (uint){}
