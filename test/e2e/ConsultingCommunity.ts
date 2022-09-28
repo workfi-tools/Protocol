@@ -129,7 +129,6 @@ describe(`
      // Assert: pro's reputation is increased
      await assertUserGetsReputationFromUser(userNewbieAddress, userProAddress, REPUTATION_REWARD);
      
-    
   })
 
   async function assertDealObjectState(id: BigNumber, stateNum: number, addressUser: string) {
@@ -160,3 +159,8 @@ describe(`
       expect(raters[0]).equal(userFrom);
   }
 })
+
+
+// Голосовые консультации
+// Сообщество. 500 js-разработчиков. Чтобы получить консультацию, необходиом самому ответить на вопросы
+// Протокол переписки с голосовухами
