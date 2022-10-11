@@ -33,7 +33,7 @@
     "compile": "npx hardhat compile",
     "clean": "npx hardhat clean",
     "test:scenario": "npx hardhat test ./test/e2e/*.ts",
-    "test:2": "npx hardhat test ./test/e2e/DevelopersCommunity.ts",
+    "test:2": "npx hardhat test ./test/e2e/Championship.ts",
     "test:unit": "npx hardhat test ./test/unit/*.test.ts",
     "test": "npx hardhat test",
     "lint": "npx hardhat check",
